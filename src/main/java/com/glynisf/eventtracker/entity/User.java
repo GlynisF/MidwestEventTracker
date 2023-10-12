@@ -5,14 +5,21 @@ import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.*;
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
+import java.util.HashSet;
+import java.util.Set;
+
+import static com.mysql.cj.conf.PropertyKey.logger;
 
 /**
  * Holds details to create a new User.
+ *
  * @author gfisher
  */
 @Entity(name = "EventTracker")
 @Table(name = "user")
 public class User {
+    private String password;
+    //private int age;
 
     @Column(name = "first_name")
     private String firstName;
@@ -22,16 +29,17 @@ public class User {
     private String userName;
     @Column(name = "date_of_birth")
     private LocalDate dateOfBirth;
-    private String password;
-    private int age;
+    @Column(name = "email_address")
+    private String email;
+    private String gender;
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
     @GenericGenerator(name="native", strategy="native")
+    @Column(name = "user_id")
     private int id;
 
-    /**
-     * Instantiates a new User.
-     */
+
     public User() {
 
     }
@@ -39,18 +47,63 @@ public class User {
     /**
      * Instantiates a new User.
      *
-     * @param firstName the first name
-     * @param lastName  the last name
-     * @param userName  the user name
-     * @param id        the id
+     * @param firstName   the first name
+     * @param lastName    the last name
+     * @param userName    the username
+     * @param email       the email
+     * @param id          the id
+     * @param password    the password
+     * @param dateOfBirth the date of birth
+     * @param gender      the gender
      */
-    public User(String firstName, String lastName, String userName, int id) {
+    public User(String firstName, String lastName, String userName, String email, int id, String password, LocalDate dateOfBirth, String gender) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.userName = userName;
+        this.email = email;
         this.id = id;
-
+        this.password = password;
+        this.dateOfBirth = dateOfBirth;
+        this.gender = gender;
     }
+
+
+    /**
+     * Gets gender.
+     *
+     * @return the gender
+     */
+    public String getGender() {
+        return gender;
+    }
+
+    /**
+     * Sets gender.
+     *
+     * @param gender the gender
+     */
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    /**
+     * Gets email.
+     *
+     * @return the email
+     */
+    public String getEmail() {
+        return email;
+    }
+
+    /**
+     * Sets email.
+     *
+     * @param email the email
+     */
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
 
     /**
      * Gets first name.
@@ -161,15 +214,20 @@ public class User {
         return dateOfBirth;
     }
 
-    /**
-     * Sets date of birth.
-     *
-     * @param dateOfBirth the date of birth
-     */
-    public void setDateOfBirth(LocalDate dateOfBirth) {
-        this.dateOfBirth = dateOfBirth;
+
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "password='" + password + '\'' +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", userName='" + userName + '\'' +
+                ", dateOfBirth=" + dateOfBirth +
+                ", email='" + email + '\'' +
+                ", gender='" + gender + '\'' +
+                ", id=" + id +
+                '}';
     }
-
-
 
 }

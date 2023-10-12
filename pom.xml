@@ -12,7 +12,7 @@
     <javax.version>7.0</javax.version>
     <jstl-version>1.2</jstl-version>
     <junit-platform-runner-version>1.0.0</junit-platform-runner-version>
-    <junit.version>4.12</junit.version>
+    <junit.version>4.13.1</junit.version>
     <junit-vintage-version>4.12.0</junit-vintage-version>
     <jupiter-version>5.0.0</jupiter-version>
     <log4j-version>2.12.4</log4j-version>
@@ -20,8 +20,8 @@
     <maven-compiler-plugin-version>3.8.1</maven-compiler-plugin-version>
     <maven-surefire-plugin-version>2.19</maven-surefire-plugin-version>
     <mysql-version>8.0.16</mysql-version>
+    <database.properties>src/main/resources/database.properties</database.properties>
   </properties>
-
   <dependencies>
     <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
     <dependency>
@@ -35,7 +35,6 @@
       <artifactId>hibernate-c3p0</artifactId>
       <version>${hibernate-version}</version>
     </dependency>
-
     <!-- next 2 dependencies are for log4j -->
     <dependency>
       <groupId>org.apache.logging.log4j</groupId>
@@ -87,8 +86,6 @@
       <artifactId>mysql-connector-java</artifactId>
       <version>${mysql-version}</version>
     </dependency>
-
-
   </dependencies>
   <build>
     <finalName>MidwestEventTracker</finalName>

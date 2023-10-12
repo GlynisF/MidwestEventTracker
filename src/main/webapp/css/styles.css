@@ -1,0 +1,82 @@
+*, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+.main_header, .home_header {
+    position: relative;
+    height: 75vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+.main_header video, .home_header video {
+    position: absolute;
+    object-fit: contain;
+    object-position: center;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.main_header .container, .home_header .container {
+    position: relative;
+    z-index: 2;
+}
+
+.main_header .overlay, .home_header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.25;
+    z-index: 1;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+div .index_bg {
+    background-color: #4c6e4d;
+}
+
+
+/* Media Query for devices withi coarse pointers and no hover functionality */
+
+/* This will use a fallback image instead of a video for devices that commonly do not support the HTML5 video element */
+
+@media (pointer: coarse) and (hover: none) {
+    .home_header {
+        background: url("/images/TV.mp4") black no-repeat center center scroll;
+    }
+
+    .main_header {
+        background: url("/images/tv_home.mp4") black no-repeat center center scroll;
+    }
+
+    .home_header video, .main_header video {
+        display: none;
+    }
+}
