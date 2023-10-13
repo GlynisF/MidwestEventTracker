@@ -1,7 +1,5 @@
 # Glynis Fisher Individual Project
 
-***
-
 ## **Problem Statement**
 Lacking access to resources could be seen as a setback. It could also be seen as a propellant for inspiration and to 
 _do it yourself_-- something dance music promoters in the Midwest are no stranger to. 
@@ -32,8 +30,9 @@ organized, focused, and successful by providing a place to help with the logisti
 User's will be able to track event details, budget, set goals, and plan smarter. 
 Midwest Event Tracker wants to help its user's event visions become reality and execute goals by 
 offering a way see the bigger picture -- with past, present, and future ideas all in one place.
+<br><br><br>
 
-### **Applied Technologies & Techniques**
+## **Applied Technologies & Techniques**
 
 ---
 
@@ -73,7 +72,9 @@ offering a way see the bigger picture -- with past, present, and future ideas al
 - *MySQL Commant Line Client*
 - *IntelliJ Idea IDE database & SQL plugins*
 - *Markdown*
+<br><br><br>
 ___
+## **Design Files**
 ### [Project plan](/ProjectPlan.md)
 ### [Screen design](/ScreenDesign.md)
 ### [Design System](/DesignSystem.md)
