@@ -1,34 +1,34 @@
 # Screen Design
 
-### *Landing Page*
+## *Landing Page*
 ![](/ScreenDesign/landing_page.png)
 
-### *Sign Up*
+## *Sign Up*
 ![](/ScreenDesign/sign_up_form.png)
 
-### *Sign Up Confirmation*
+## *Sign Up Confirmation*
 ![](/ScreenDesign/sign_up_confirmation.png)
 
-### *Sign Up Success*
+## *Sign Up Success*
 ![](/ScreenDesign/sign_up_success.png)
 
-### *Login Modal (after user sign up)*
+## *Login Modal (after user sign up)*
 ![](/ScreenDesign/login_after_signup.png)
 
-### *Login (existing users)*
+## *Login (existing users)*
 ![](/ScreenDesign/login.png)
 
-### *Homepage*
+## *Homepage*
 ![](/ScreenDesign/Homepage.png)
 
-### *Profile*
+## *Profile*
 ![](/ScreenDesign/profile.png)
 
-### *Edit Profile (personal details)*
+## *Edit Profile (personal details)*
 ![](/ScreenDesign/edit_profile_personal.png)
 
-### *Edit Profile (account details*
+## *Edit Profile (account details*
 ![](/ScreenDesign/edit_profile_account.png)
 
-### *Event Planner*
+## *Event Planner*
 ![](/ScreenDesign/event_planner.png)

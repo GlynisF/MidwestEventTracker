@@ -73,3 +73,7 @@ offering a way see the bigger picture -- with past, present, and future events a
 - *MySQL Commant Line Client*
 - *IntelliJ Idea IDE database & SQL plugins*
 - *Markdown*
+___
+### [Project plan](/ProjectPlan.md)
+### [Screen design](/ScreenDesign.md)
+### [Design System](/DesignSystem.md)
