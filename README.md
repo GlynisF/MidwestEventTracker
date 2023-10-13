@@ -31,7 +31,7 @@ Midwest Event Tracker is here to help smaller promoters elevate their event game
 organized, focused, and successful by providing a place to help with the logistical side of event throwing. 
 User's will be able to track event details, budget, set goals, and plan smarter. 
 Midwest Event Tracker wants to help its user's event visions become reality and execute goals by 
-offering a way see the bigger picture -- with past, present, and future events all in one place.
+offering a way see the bigger picture -- with past, present, and future ideas all in one place.
 
 ### **Applied Technologies & Techniques**
 
