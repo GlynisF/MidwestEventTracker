@@ -20,7 +20,6 @@ class NotebookDaoTest {
     /**
      * The NotebookDao.
      */
-    NotebookDao dao;
     GenericDao genericDao;
 
     private final Logger logger = LogManager.getLogger(this.getClass());
@@ -30,7 +29,6 @@ class NotebookDaoTest {
      */
     @BeforeEach
     void setUp() {
-        dao = new NotebookDao();
         genericDao = new GenericDao(Notebook.class);
         Database database = Database.getInstance();
         database.runSQL("cleandb.sql");
@@ -73,7 +71,6 @@ class NotebookDaoTest {
     void deleteSuccess() {
         genericDao.delete(genericDao.getById(3));
         assertNull(genericDao.getById(3));
-        logger.info(dao.getById(3));
     }
 
     /**
