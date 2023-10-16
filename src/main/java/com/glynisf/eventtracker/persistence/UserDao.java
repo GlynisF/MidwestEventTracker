@@ -40,43 +40,6 @@ public class UserDao {
         return users;
     }
 
-    /**
-     * Gets all users by last name.
-     *
-     * @param firstName the first name
-     * @return the all users
-     */
-    public List<User> getUsersByFirstName(String firstName) {
-
-        logger.debug("Searching for: {}", firstName);
-
-        Session session = sessionFactory.openSession();
-
-        CriteriaBuilder builder = session.getCriteriaBuilder();
-        CriteriaQuery<User> query = builder.createQuery(User.class);
-        Root<User> root = query.from(User.class);
-        Expression<String> propertyPath = root.get("firstName");
-        query.where(builder.like(propertyPath, "%" + firstName + "%"));
-        List<User> users = session.createQuery(query).getResultList();
-        session.close();
-        return users;
-    }
-
-    public List<User> getUserByLastName(String lastName) {
-        logger.debug("Searching for: {}", lastName);
-
-        Session session = sessionFactory.openSession();
-
-        CriteriaBuilder builder = session.getCriteriaBuilder();
-        CriteriaQuery<User> query = builder.createQuery(User.class);
-        Root<User> root = query.from(User.class);
-        Expression<String> propertyPath = root.get("lastName");
-        query.where(builder.like(propertyPath, "=" + lastName));
-        List<User> users = session.createQuery(query).getResultList();
-        session.close();
-        return users;
-
-    }
 
     /**
      * Gets a user by id
@@ -91,22 +54,6 @@ public class UserDao {
         return user;
     }
 
-    public List<User> getByEmail(String email) {
-        logger.debug("Searching for: {}", email);
-
-        Session session = sessionFactory.openSession();
-
-        CriteriaBuilder builder = session.getCriteriaBuilder();
-        CriteriaQuery<User> query = builder.createQuery(User.class);
-        Root<User> root = query.from(User.class);
-        Expression<String> propertyPath = root.get("firstName");
-        query.where(builder.like(propertyPath, "=" + email));
-        List<User> users = session.createQuery(query).getResultList();
-        session.close();
-        return users;
-    }
-
-
     /**
      * update user
      *
@@ -120,16 +67,70 @@ public class UserDao {
         session.close();
     }
 
-    public List<User> getByUsername(String userName) {
-        logger.debug("Searching for: {}", userName);
+    /**
+     * Get user by property (exact match)
+     * sample usage: getByPropertyEqual("lastName", "Curry")
+     *
+     * @param propertyName entity property to search by
+     * @param value value of the property to search for
+     * @return list of users meeting the criteria search
+     */
+    public List<User> getByPropertyEqual(String propertyName, String value) {
+        Session session = sessionFactory.openSession();
+
+        logger.debug("Searching for user with " + propertyName + " = " + value);
+
+        CriteriaBuilder builder = session.getCriteriaBuilder();
+        CriteriaQuery<User> query = builder.createQuery( User.class );
+        Root<User> root = query.from( User.class );
+        query.select(root).where(builder.equal(root.get(propertyName), value));
+        List<User> users = session.createQuery( query ).getResultList();
+
+        session.close();
+        return users;
+    }
+
+    /**
+     * Get user by property (like)
+     * sample usage: getByPropertyLike("lastName", "C")
+     *
+     * @param propertyName entity property to search by
+     * @param value value of the property to search for
+     * @return list of users meeting the criteria search
+     */
+    public List<User> getByPropertyLike(String propertyName, String value) {
+        Session session = sessionFactory.openSession();
+
+        logger.debug("Searching for user with {} = {}",  propertyName, value);
+
+        CriteriaBuilder builder = session.getCriteriaBuilder();
+        CriteriaQuery<User> query = builder.createQuery( User.class );
+        Root<User> root = query.from( User.class );
+        Expression<String> propertyPath = root.get(propertyName);
+
+        query.where(builder.like(propertyPath, "%" + value + "%"));
+
+        List<User> users = session.createQuery( query ).getResultList();
+        session.close();
+        return users;
+    }
+
+    /**
+     * Gets all users by last name.
+     * @param lastName the last name to search by
+     * @return the all users
+     */
+    public List<User> getUsersByLastName(String lastName) {
+
+        logger.debug("Searching for: {}", lastName);
 
         Session session = sessionFactory.openSession();
 
         CriteriaBuilder builder = session.getCriteriaBuilder();
         CriteriaQuery<User> query = builder.createQuery(User.class);
         Root<User> root = query.from(User.class);
-        Expression<String> propertyPath = root.get("userName");
-        query.where(builder.like(propertyPath, "=" + userName));
+        Expression<String> propertyPath = root.get("lastName");
+        query.where(builder.like(propertyPath, "%" + lastName + "%"));
         List<User> users = session.createQuery(query).getResultList();
         session.close();
         return users;

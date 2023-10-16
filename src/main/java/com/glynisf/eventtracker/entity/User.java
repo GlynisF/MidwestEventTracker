@@ -9,6 +9,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 import static com.mysql.cj.conf.PropertyKey.logger;
+import static javax.persistence.FetchType.EAGER;
 
 /**
  * Holds details to create a new User.
@@ -39,7 +40,12 @@ public class User {
     @Column(name = "user_id")
     private int id;
 
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = EAGER)
+    private Set<Notebook> notebooks = new HashSet<>();
 
+    /**
+     * Instantiates a new User.
+     */
     public User() {
 
     }
@@ -67,6 +73,23 @@ public class User {
         this.gender = gender;
     }
 
+    /**
+     * Gets notebook.
+     *
+     * @return the notebook
+     */
+    public Set<Notebook> getNotebooks() {
+        return notebooks;
+    }
+
+    /**
+     * Sets notebook.
+     *
+     * @param notebook the notebook
+     */
+    public void setNotebooks(Set<Notebook> notebooks) {
+        this.notebooks = notebooks;
+    }
 
     /**
      * Gets gender.
@@ -214,7 +237,25 @@ public class User {
         return dateOfBirth;
     }
 
+    /**
+     * Instantiates a new Add notebook.
+     *
+     * @param notebook the notebook
+     */
+    public void addNotebook(Notebook notebook) {
+        notebooks.add(notebook);
+        notebook.setUser(this);
+    }
 
+    /**
+     * Instantiates a new Remove notebook.
+     *
+     * @param notebook the notebook
+     */
+    public void removeNotebook(Notebook notebook) {
+        notebooks.remove(notebook);
+        notebook.setUser(null);
+    }
 
     @Override
     public String toString() {

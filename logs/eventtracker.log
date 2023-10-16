@@ -1,0 +1,174 @@
+[INFO ] 2023-10-16 00:33:56.674 [main] UserDaoTest - com.glynisf.test.util.Database@7739aac4
+[INFO ] 2023-10-16 00:33:57.243 [main] UserDaoTest - null
+[INFO ] 2023-10-16 00:33:57.314 [main] UserDaoTest - com.glynisf.test.util.Database@7739aac4
+[DEBUG] 2023-10-16 00:33:57.320 [main] UserDao - Searching for: gcadagfisher@madisoncollege.edu
+[DEBUG] 2023-10-16 00:33:57.886 [main] UserDao - Searching for: gcadagfisher@madisoncollege.edu
+[INFO ] 2023-10-16 00:33:57.952 [main] UserDaoTest - com.glynisf.test.util.Database@7739aac4
+[INFO ] 2023-10-16 00:33:58.019 [main] UserDaoTest - User{password='supersecret3', firstName='chupi', lastName='Curry', userName='bcurry', dateOfBirth=1947-11-11, email='bcurry@email.com', gender='NB', id=3}
+[INFO ] 2023-10-16 00:33:58.078 [main] UserDaoTest - User{password='supersecret3', firstName='chupi', lastName='Curry', userName='bcurry', dateOfBirth=1947-11-11, email='bcurry@email.com', gender='NB', id=3}
+[INFO ] 2023-10-16 00:33:58.136 [main] UserDaoTest - com.glynisf.test.util.Database@7739aac4
+[DEBUG] 2023-10-16 00:33:58.136 [main] UserDao - Searching for: tillman
+[DEBUG] 2023-10-16 00:33:58.170 [main] UserDao - Searching for: tillman
+[INFO ] 2023-10-16 00:33:58.243 [main] UserDaoTest - com.glynisf.test.util.Database@7739aac4
+[INFO ] 2023-10-16 00:33:58.310 [main] UserDaoTest - com.glynisf.test.util.Database@7739aac4
+[INFO ] 2023-10-16 00:33:58.413 [main] UserDaoTest - User{password='wahoo11', firstName='Glynis', lastName='Fisher', userName='gfisher', dateOfBirth=1992-08-11, email='gcadagfisher@email.com', gender='F', id=260}
+[INFO ] 2023-10-16 00:33:58.464 [main] UserDaoTest - com.glynisf.test.util.Database@7739aac4
+[DEBUG] 2023-10-16 00:33:58.465 [main] UserDao - Searching for: Glynis
+[INFO ] 2023-10-16 00:33:58.477 [main] UserDaoTest - []
+[DEBUG] 2023-10-16 00:33:58.477 [main] UserDao - Searching for: Glynis
+[INFO ] 2023-10-16 00:33:58.535 [main] UserDaoTest - com.glynisf.test.util.Database@7739aac4
+[INFO ] 2023-10-16 00:33:58.691 [main] UserDaoTest - com.glynisf.test.util.Database@7739aac4
+[INFO ] 2023-10-16 00:33:58.729 [main] UserDaoTest - User{password='wahoo11', firstName='Glynis', lastName='Fisher', userName='gfisher', dateOfBirth=1992-08-11, email='gcadagfisher@email.com', gender='F', id=261}
+[INFO ] 2023-10-16 00:36:55.530 [main] UserDaoTest - com.glynisf.test.util.Database@1df9186f
+[INFO ] 2023-10-16 00:36:55.879 [main] UserDaoTest - null
+[INFO ] 2023-10-16 00:36:55.916 [main] UserDaoTest - com.glynisf.test.util.Database@1df9186f
+[DEBUG] 2023-10-16 00:36:55.917 [main] UserDao - Searching for: gcadagfisher@madisoncollege.edu
+[DEBUG] 2023-10-16 00:36:56.192 [main] UserDao - Searching for: gcadagfisher@madisoncollege.edu
+[INFO ] 2023-10-16 00:36:56.234 [main] UserDaoTest - com.glynisf.test.util.Database@1df9186f
+[INFO ] 2023-10-16 00:36:56.273 [main] UserDaoTest - User{password='supersecret3', firstName='chupi', lastName='Curry', userName='bcurry', dateOfBirth=1947-11-11, email='bcurry@email.com', gender='NB', id=3}
+[INFO ] 2023-10-16 00:36:56.300 [main] UserDaoTest - User{password='supersecret3', firstName='chupi', lastName='Curry', userName='bcurry', dateOfBirth=1947-11-11, email='bcurry@email.com', gender='NB', id=3}
+[INFO ] 2023-10-16 00:36:56.335 [main] UserDaoTest - com.glynisf.test.util.Database@1df9186f
+[DEBUG] 2023-10-16 00:36:56.336 [main] UserDao - Searching for: tillman
+[DEBUG] 2023-10-16 00:36:56.351 [main] UserDao - Searching for: tillman
+[INFO ] 2023-10-16 00:36:56.394 [main] UserDaoTest - com.glynisf.test.util.Database@1df9186f
+[INFO ] 2023-10-16 00:36:56.445 [main] UserDaoTest - com.glynisf.test.util.Database@1df9186f
+[INFO ] 2023-10-16 00:36:56.507 [main] UserDaoTest - User{password='wahoo11', firstName='Glynis', lastName='Fisher', userName='gfisher', dateOfBirth=1992-08-11, email='gcadagfisher@email.com', gender='F', id=262}
+[INFO ] 2023-10-16 00:36:56.551 [main] UserDaoTest - com.glynisf.test.util.Database@1df9186f
+[DEBUG] 2023-10-16 00:36:56.551 [main] UserDao - Searching for: Glynis
+[INFO ] 2023-10-16 00:36:56.561 [main] UserDaoTest - []
+[DEBUG] 2023-10-16 00:36:56.561 [main] UserDao - Searching for: Glynis
+[INFO ] 2023-10-16 00:36:56.623 [main] UserDaoTest - com.glynisf.test.util.Database@1df9186f
+[INFO ] 2023-10-16 00:36:56.741 [main] UserDaoTest - com.glynisf.test.util.Database@1df9186f
+[INFO ] 2023-10-16 00:36:56.769 [main] UserDaoTest - User{password='wahoo11', firstName='Glynis', lastName='Fisher', userName='gfisher', dateOfBirth=1992-08-11, email='gcadagfisher@email.com', gender='F', id=263}
+[INFO ] 2023-10-16 01:29:38.308 [main] UserDaoTest - com.glynisf.test.util.Database@6ddd1c51
+[INFO ] 2023-10-16 01:29:38.789 [main] UserDaoTest - null
+[INFO ] 2023-10-16 01:29:38.843 [main] UserDaoTest - com.glynisf.test.util.Database@6ddd1c51
+[DEBUG] 2023-10-16 01:29:38.844 [main] UserDao - Searching for: gcadagfisher@madisoncollege.edu
+[DEBUG] 2023-10-16 01:29:39.037 [main] UserDao - Searching for: gcadagfisher@madisoncollege.edu
+[INFO ] 2023-10-16 01:29:39.071 [main] UserDaoTest - com.glynisf.test.util.Database@6ddd1c51
+[INFO ] 2023-10-16 01:29:39.106 [main] UserDaoTest - User{password='supersecret3', firstName='chupi', lastName='Curry', userName='bcurry', dateOfBirth=1947-11-11, email='bcurry@email.com', gender='NB', id=3}
+[INFO ] 2023-10-16 01:29:39.129 [main] UserDaoTest - User{password='supersecret3', firstName='chupi', lastName='Curry', userName='bcurry', dateOfBirth=1947-11-11, email='bcurry@email.com', gender='NB', id=3}
+[INFO ] 2023-10-16 01:29:39.155 [main] UserDaoTest - com.glynisf.test.util.Database@6ddd1c51
+[DEBUG] 2023-10-16 01:29:39.155 [main] UserDao - Searching for: tillman
+[DEBUG] 2023-10-16 01:29:39.166 [main] UserDao - Searching for: tillman
+[INFO ] 2023-10-16 01:29:39.199 [main] UserDaoTest - com.glynisf.test.util.Database@6ddd1c51
+[INFO ] 2023-10-16 01:29:39.231 [main] UserDaoTest - com.glynisf.test.util.Database@6ddd1c51
+[INFO ] 2023-10-16 01:29:39.276 [main] UserDaoTest - User{password='wahoo11', firstName='Glynis', lastName='Fisher', userName='gfisher', dateOfBirth=1992-08-11, email='gcadagfisher@email.com', gender='F', id=264}
+[INFO ] 2023-10-16 01:29:39.298 [main] UserDaoTest - com.glynisf.test.util.Database@6ddd1c51
+[DEBUG] 2023-10-16 01:29:39.299 [main] UserDao - Searching for: Glynis
+[INFO ] 2023-10-16 01:29:39.303 [main] UserDaoTest - []
+[DEBUG] 2023-10-16 01:29:39.303 [main] UserDao - Searching for: Glynis
+[INFO ] 2023-10-16 01:29:39.334 [main] UserDaoTest - com.glynisf.test.util.Database@6ddd1c51
+[INFO ] 2023-10-16 01:29:39.395 [main] UserDaoTest - com.glynisf.test.util.Database@6ddd1c51
+[INFO ] 2023-10-16 01:29:39.414 [main] UserDaoTest - User{password='wahoo11', firstName='Glynis', lastName='Fisher', userName='gfisher', dateOfBirth=1992-08-11, email='gcadagfisher@email.com', gender='F', id=265}
+[INFO ] 2023-10-16 02:01:19.950 [main] UserDaoTest - com.glynisf.test.util.Database@1fb2eec
+[DEBUG] 2023-10-16 02:01:19.953 [main] UserDao - Searching for: tillman
+[DEBUG] 2023-10-16 02:01:20.237 [main] UserDao - Searching for: tillman
+[INFO ] 2023-10-16 02:02:10.487 [main] UserDaoTest - com.glynisf.test.util.Database@1fb2eec
+[DEBUG] 2023-10-16 02:02:10.489 [main] UserDao - Searching for: tillman
+[DEBUG] 2023-10-16 02:02:10.827 [main] UserDao - Searching for: Tillman
+[INFO ] 2023-10-16 02:03:11.089 [main] UserDaoTest - com.glynisf.test.util.Database@1fb2eec
+[DEBUG] 2023-10-16 02:03:11.091 [main] UserDao - Searching for: Tillman
+[DEBUG] 2023-10-16 02:03:11.580 [main] UserDao - Searching for: Tillman
+[INFO ] 2023-10-16 02:04:40.196 [main] UserDaoTest - com.glynisf.test.util.Database@1fb2eec
+[DEBUG] 2023-10-16 02:04:40.200 [main] UserDao - Searching for: Tillman
+[INFO ] 2023-10-16 02:05:59.767 [main] UserDaoTest - com.glynisf.test.util.Database@1fb2eec
+[DEBUG] 2023-10-16 02:05:59.768 [main] UserDao - Searching for: c
+[INFO ] 2023-10-16 02:06:21.588 [main] UserDaoTest - com.glynisf.test.util.Database@752b69e3
+[INFO ] 2023-10-16 02:06:21.799 [main] UserDaoTest - null
+[INFO ] 2023-10-16 02:06:21.827 [main] UserDaoTest - com.glynisf.test.util.Database@752b69e3
+[INFO ] 2023-10-16 02:06:21.857 [main] UserDaoTest - User{password='supersecret3', firstName='chupi', lastName='Curry', userName='bcurry', dateOfBirth=1947-11-11, email='bcurry@email.com', gender='NB', id=3}
+[INFO ] 2023-10-16 02:06:21.873 [main] UserDaoTest - User{password='supersecret3', firstName='chupi', lastName='Curry', userName='bcurry', dateOfBirth=1947-11-11, email='bcurry@email.com', gender='NB', id=3}
+[INFO ] 2023-10-16 02:06:21.899 [main] UserDaoTest - com.glynisf.test.util.Database@752b69e3
+[DEBUG] 2023-10-16 02:06:21.905 [main] UserDao - Searching for user with lastName = Curry
+[INFO ] 2023-10-16 02:06:22.108 [main] UserDaoTest - com.glynisf.test.util.Database@752b69e3
+[DEBUG] 2023-10-16 02:06:22.109 [main] UserDao - Searching for user with lastName = c
+[INFO ] 2023-10-16 02:06:22.161 [main] UserDaoTest - com.glynisf.test.util.Database@752b69e3
+[INFO ] 2023-10-16 02:06:22.198 [main] UserDaoTest - com.glynisf.test.util.Database@752b69e3
+[DEBUG] 2023-10-16 02:06:22.198 [main] UserDao - Searching for: c
+[INFO ] 2023-10-16 02:06:22.237 [main] UserDaoTest - com.glynisf.test.util.Database@752b69e3
+[INFO ] 2023-10-16 02:06:22.269 [main] UserDaoTest - User{password='wahoo11', firstName='Glynis', lastName='Fisher', userName='gfisher', dateOfBirth=1992-08-11, email='gcadagfisher@email.com', gender='F', id=266}
+[INFO ] 2023-10-16 02:06:22.292 [main] UserDaoTest - com.glynisf.test.util.Database@752b69e3
+[INFO ] 2023-10-16 02:06:22.353 [main] UserDaoTest - com.glynisf.test.util.Database@752b69e3
+[INFO ] 2023-10-16 02:06:22.368 [main] UserDaoTest - User{password='wahoo11', firstName='Glynis', lastName='Fisher', userName='gfisher', dateOfBirth=1992-08-11, email='gcadagfisher@email.com', gender='F', id=267}
+[INFO ] 2023-10-16 02:10:23.466 [main] NotebookDaoTest - com.glynisf.test.util.Database@1fb2eec
+[INFO ] 2023-10-16 02:18:27.751 [main] NotebookDaoTest - com.glynisf.test.util.Database@1fb2eec
+[INFO ] 2023-10-16 02:18:51.929 [main] NotebookDaoTest - com.glynisf.test.util.Database@1fb2eec
+[INFO ] 2023-10-16 02:29:34.155 [main] NotebookDaoTest - com.glynisf.test.util.Database@1fb2eec
+[INFO ] 2023-10-16 02:29:53.547 [main] NotebookDaoTest - com.glynisf.test.util.Database@1fb2eec
+[INFO ] 2023-10-16 02:29:53.786 [main] NotebookDaoTest - null
+[INFO ] 2023-10-16 02:30:12.803 [main] NotebookDaoTest - com.glynisf.test.util.Database@15605d83
+[INFO ] 2023-10-16 02:30:13.032 [main] NotebookDaoTest - Notebook{id=22, title='October Events', user=User{password='supersecret1', firstName='Joe', lastName='Coyne', userName='jcoyne', dateOfBirth=1964-04-01, email='jcoyne@email.com', gender='F', id=1}}
+[INFO ] 2023-10-16 02:30:29.064 [main] NotebookDaoTest - com.glynisf.test.util.Database@752b69e3
+[INFO ] 2023-10-16 02:30:29.485 [main] NotebookDaoTest - null
+[INFO ] 2023-10-16 02:30:29.530 [main] NotebookDaoTest - com.glynisf.test.util.Database@752b69e3
+[INFO ] 2023-10-16 02:30:29.595 [main] NotebookDaoTest - Notebook{id=3, title='October 2023', user=User{password='supersecret3', firstName='Barney', lastName='Curry', userName='bcurry', dateOfBirth=1947-11-11, email='bcurry@email.com', gender='NB', id=3}}
+[INFO ] 2023-10-16 02:30:29.647 [main] NotebookDaoTest - Notebook{id=3, title='October 2023', user=User{password='supersecret3', firstName='Barney', lastName='Curry', userName='bcurry', dateOfBirth=1947-11-11, email='bcurry@email.com', gender='NB', id=3}}
+[INFO ] 2023-10-16 02:30:29.762 [main] NotebookDaoTest - com.glynisf.test.util.Database@752b69e3
+[DEBUG] 2023-10-16 02:30:29.767 [main] NotebookDao - Searching for Notebook with title = October Events
+[INFO ] 2023-10-16 02:30:30.037 [main] NotebookDaoTest - com.glynisf.test.util.Database@752b69e3
+[DEBUG] 2023-10-16 02:30:30.038 [main] NotebookDao - Searching for Notebook with title = O
+[INFO ] 2023-10-16 02:30:30.094 [main] NotebookDaoTest - com.glynisf.test.util.Database@752b69e3
+[INFO ] 2023-10-16 02:30:30.141 [main] NotebookDaoTest - com.glynisf.test.util.Database@752b69e3
+[INFO ] 2023-10-16 02:30:30.202 [main] NotebookDaoTest - com.glynisf.test.util.Database@752b69e3
+[INFO ] 2023-10-16 02:30:30.251 [main] NotebookDaoTest - Notebook{id=23, title='October Events', user=User{password='supersecret1', firstName='Joe', lastName='Coyne', userName='jcoyne', dateOfBirth=1964-04-01, email='jcoyne@email.com', gender='F', id=1}}
+[INFO ] 2023-10-16 02:32:03.416 [main] NotebookDaoTest - com.glynisf.test.util.Database@41aebbb4
+[INFO ] 2023-10-16 02:32:03.795 [main] NotebookDaoTest - null
+[INFO ] 2023-10-16 02:32:03.851 [main] NotebookDaoTest - com.glynisf.test.util.Database@41aebbb4
+[INFO ] 2023-10-16 02:32:03.914 [main] NotebookDaoTest - Notebook{id=3, title='October 2023', user=User{password='supersecret3', firstName='Barney', lastName='Curry', userName='bcurry', dateOfBirth=1947-11-11, email='bcurry@email.com', gender='NB', id=3}}
+[INFO ] 2023-10-16 02:32:03.962 [main] NotebookDaoTest - Notebook{id=3, title='October 2023', user=User{password='supersecret3', firstName='Barney', lastName='Curry', userName='bcurry', dateOfBirth=1947-11-11, email='bcurry@email.com', gender='NB', id=3}}
+[INFO ] 2023-10-16 02:32:04.012 [main] NotebookDaoTest - com.glynisf.test.util.Database@41aebbb4
+[DEBUG] 2023-10-16 02:32:04.028 [main] NotebookDao - Searching for Notebook with title = October Events
+[INFO ] 2023-10-16 02:32:04.413 [main] NotebookDaoTest - com.glynisf.test.util.Database@41aebbb4
+[DEBUG] 2023-10-16 02:32:04.414 [main] NotebookDao - Searching for Notebook with title = O
+[INFO ] 2023-10-16 02:32:04.467 [main] NotebookDaoTest - com.glynisf.test.util.Database@41aebbb4
+[INFO ] 2023-10-16 02:32:04.512 [main] NotebookDaoTest - com.glynisf.test.util.Database@41aebbb4
+[INFO ] 2023-10-16 02:32:04.568 [main] NotebookDaoTest - com.glynisf.test.util.Database@41aebbb4
+[INFO ] 2023-10-16 02:32:04.610 [main] NotebookDaoTest - Notebook{id=24, title='October Events', user=User{password='supersecret1', firstName='Joe', lastName='Coyne', userName='jcoyne', dateOfBirth=1964-04-01, email='jcoyne@email.com', gender='F', id=1}}
+[INFO ] 2023-10-16 02:32:04.643 [main] UserDaoTest - com.glynisf.test.util.Database@41aebbb4
+[INFO ] 2023-10-16 02:32:04.679 [main] UserDaoTest - null
+[INFO ] 2023-10-16 02:32:04.706 [main] UserDaoTest - com.glynisf.test.util.Database@41aebbb4
+[INFO ] 2023-10-16 02:32:04.729 [main] UserDaoTest - User{password='supersecret3', firstName='chupi', lastName='Curry', userName='bcurry', dateOfBirth=1947-11-11, email='bcurry@email.com', gender='NB', id=3}
+[INFO ] 2023-10-16 02:32:04.729 [main] UserDaoTest - User{password='supersecret3', firstName='chupi', lastName='Curry', userName='bcurry', dateOfBirth=1947-11-11, email='bcurry@email.com', gender='NB', id=3}
+[INFO ] 2023-10-16 02:32:04.755 [main] UserDaoTest - com.glynisf.test.util.Database@41aebbb4
+[DEBUG] 2023-10-16 02:32:04.756 [main] UserDao - Searching for user with lastName = Curry
+[INFO ] 2023-10-16 02:32:04.801 [main] UserDaoTest - com.glynisf.test.util.Database@41aebbb4
+[DEBUG] 2023-10-16 02:32:04.801 [main] UserDao - Searching for user with lastName = c
+[INFO ] 2023-10-16 02:32:04.876 [main] UserDaoTest - com.glynisf.test.util.Database@41aebbb4
+[INFO ] 2023-10-16 02:32:04.927 [main] UserDaoTest - com.glynisf.test.util.Database@41aebbb4
+[DEBUG] 2023-10-16 02:32:04.928 [main] UserDao - Searching for: c
+[INFO ] 2023-10-16 02:32:04.999 [main] UserDaoTest - com.glynisf.test.util.Database@41aebbb4
+[INFO ] 2023-10-16 02:32:05.047 [main] UserDaoTest - User{password='wahoo11', firstName='Glynis', lastName='Fisher', userName='gfisher', dateOfBirth=1992-08-11, email='gcadagfisher@email.com', gender='F', id=268}
+[INFO ] 2023-10-16 02:32:05.088 [main] UserDaoTest - com.glynisf.test.util.Database@41aebbb4
+[INFO ] 2023-10-16 02:32:05.167 [main] UserDaoTest - com.glynisf.test.util.Database@41aebbb4
+[INFO ] 2023-10-16 02:32:05.190 [main] UserDaoTest - User{password='wahoo11', firstName='Glynis', lastName='Fisher', userName='gfisher', dateOfBirth=1992-08-11, email='gcadagfisher@email.com', gender='F', id=269}
+[INFO ] 2023-10-16 02:32:49.068 [main] NotebookDaoTest - com.glynisf.test.util.Database@3f6cce7f
+[INFO ] 2023-10-16 02:32:49.285 [main] NotebookDaoTest - null
+[INFO ] 2023-10-16 02:32:49.322 [main] NotebookDaoTest - com.glynisf.test.util.Database@3f6cce7f
+[INFO ] 2023-10-16 02:32:49.372 [main] NotebookDaoTest - Notebook{id=3, title='October 2023', user=User{password='supersecret3', firstName='Barney', lastName='Curry', userName='bcurry', dateOfBirth=1947-11-11, email='bcurry@email.com', gender='NB', id=3}}
+[INFO ] 2023-10-16 02:32:49.418 [main] NotebookDaoTest - Notebook{id=3, title='October 2023', user=User{password='supersecret3', firstName='Barney', lastName='Curry', userName='bcurry', dateOfBirth=1947-11-11, email='bcurry@email.com', gender='NB', id=3}}
+[INFO ] 2023-10-16 02:32:49.467 [main] NotebookDaoTest - com.glynisf.test.util.Database@3f6cce7f
+[DEBUG] 2023-10-16 02:32:49.479 [main] NotebookDao - Searching for Notebook with title = October Events
+[INFO ] 2023-10-16 02:32:49.855 [main] NotebookDaoTest - com.glynisf.test.util.Database@3f6cce7f
+[DEBUG] 2023-10-16 02:32:49.856 [main] NotebookDao - Searching for Notebook with title = O
+[INFO ] 2023-10-16 02:32:49.946 [main] NotebookDaoTest - com.glynisf.test.util.Database@3f6cce7f
+[INFO ] 2023-10-16 02:32:49.997 [main] NotebookDaoTest - com.glynisf.test.util.Database@3f6cce7f
+[INFO ] 2023-10-16 02:32:50.060 [main] NotebookDaoTest - com.glynisf.test.util.Database@3f6cce7f
+[INFO ] 2023-10-16 02:32:50.102 [main] NotebookDaoTest - Notebook{id=26, title='October Events', user=User{password='supersecret1', firstName='Joe', lastName='Coyne', userName='jcoyne', dateOfBirth=1964-04-01, email='jcoyne@email.com', gender='F', id=1}}
+[INFO ] 2023-10-16 02:33:27.471 [main] UserDaoTest - com.glynisf.test.util.Database@3f6cce7f
+[INFO ] 2023-10-16 02:33:27.965 [main] UserDaoTest - null
+[INFO ] 2023-10-16 02:33:28.019 [main] UserDaoTest - com.glynisf.test.util.Database@3f6cce7f
+[INFO ] 2023-10-16 02:33:28.091 [main] UserDaoTest - User{password='supersecret3', firstName='chupi', lastName='Curry', userName='bcurry', dateOfBirth=1947-11-11, email='bcurry@email.com', gender='NB', id=3}
+[INFO ] 2023-10-16 02:33:28.124 [main] UserDaoTest - User{password='supersecret3', firstName='chupi', lastName='Curry', userName='bcurry', dateOfBirth=1947-11-11, email='bcurry@email.com', gender='NB', id=3}
+[INFO ] 2023-10-16 02:33:28.172 [main] UserDaoTest - com.glynisf.test.util.Database@3f6cce7f
+[DEBUG] 2023-10-16 02:33:28.187 [main] UserDao - Searching for user with lastName = Curry
+[INFO ] 2023-10-16 02:33:28.479 [main] UserDaoTest - com.glynisf.test.util.Database@3f6cce7f
+[DEBUG] 2023-10-16 02:33:28.480 [main] UserDao - Searching for user with lastName = c
+[INFO ] 2023-10-16 02:33:28.542 [main] UserDaoTest - com.glynisf.test.util.Database@3f6cce7f
+[INFO ] 2023-10-16 02:33:28.588 [main] UserDaoTest - com.glynisf.test.util.Database@3f6cce7f
+[DEBUG] 2023-10-16 02:33:28.588 [main] UserDao - Searching for: c
+[INFO ] 2023-10-16 02:33:28.649 [main] UserDaoTest - com.glynisf.test.util.Database@3f6cce7f
+[INFO ] 2023-10-16 02:33:28.698 [main] UserDaoTest - User{password='wahoo11', firstName='Glynis', lastName='Fisher', userName='gfisher', dateOfBirth=1992-08-11, email='gcadagfisher@email.com', gender='F', id=270}
+[INFO ] 2023-10-16 02:33:28.730 [main] UserDaoTest - com.glynisf.test.util.Database@3f6cce7f
+[INFO ] 2023-10-16 02:33:28.798 [main] UserDaoTest - com.glynisf.test.util.Database@3f6cce7f
+[INFO ] 2023-10-16 02:33:28.815 [main] UserDaoTest - User{password='wahoo11', firstName='Glynis', lastName='Fisher', userName='gfisher', dateOfBirth=1992-08-11, email='gcadagfisher@email.com', gender='F', id=271}

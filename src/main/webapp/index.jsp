@@ -25,7 +25,7 @@
                 <div class="w-100 text-white">
                     <h1 class="display-3">Midwest Event Tracker</h1>
                     <h2><a class="lead mb-0" href="login.jsp">Login</a></h2>
-                    <h2><a class="lead mb-0" href="userSignUp">Sign up</a></h2>
+                    <h2><a class="lead mb-0" href="signup.jsp">Sign up</a></h2>
                 </div>
             </div>
         </div>

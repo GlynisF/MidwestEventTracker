@@ -1,5 +1,6 @@
 package com.glynisf.eventtracker.persistence;
 
+import com.glynisf.eventtracker.entity.Notebook;
 import com.glynisf.eventtracker.entity.User;
 import com.glynisf.test.util.Database;
 import org.apache.logging.log4j.LogManager;
@@ -59,6 +60,21 @@ class UserDaoTest {
     /**
      * verifies insertion of new user is successful.
      */
+    @Test
+    void insertWithNotebookSuccess() {
+        User newUser = new User("Glynis", "Fisher", "gfisher", "gcadagfisher@email.com", 0, "wahoo11", LocalDate.parse("1992-08-11"), "F");
+
+        String title = "October Events";
+        Notebook notebook = new Notebook(title, newUser);
+
+        newUser.addNotebook(notebook);
+        int id = dao.insert(newUser);
+        assertNotEquals(0,id);
+        User insertedUser = dao.getById(id);
+        logger.info(newUser);
+        assertEquals(id, insertedUser.getId());
+        assertEquals(1, insertedUser.getNotebooks().size());
+    }
 
     /**
      * Verifies deletion of user is successful.
@@ -97,32 +113,34 @@ class UserDaoTest {
         logger.info(userToUpdate);
     }
 
+
+
+    /**
+     * Verifies gets users by last name successfully.
+     */
     @Test
-    void getByFirstNameSuccess() {
-        String firstName = "Glynis";
-        List<User> userRetrievedByFistName = dao.getUsersByFirstName(firstName);
-        logger.info(userRetrievedByFistName);
-        List<User> expectedFirstName = dao.getUsersByFirstName("Glynis");
-        assertEquals(userRetrievedByFistName, expectedFirstName);
+    void getUsersByLastNameSuccess() {
+        List<User> users = dao.getUsersByLastName("c");
+        assertEquals(3, users.size());
     }
 
+    /**
+     * Verify successful get by property (equal match)
+     */
     @Test
-    void getByEmailSuccess() {
-        String email = "gcadagfisher@madisoncollege.edu";
-        List<User> retrievedEmail = dao.getByEmail(email);
-        List<User> expectedEmail = dao.getByEmail("gcadagfisher@madisoncollege.edu");
-        assertEquals(retrievedEmail, expectedEmail);
+    void getByPropertyEqualSuccess() {
+        List<User> users = dao.getByPropertyEqual("lastName", "Curry");
+        assertEquals(1, users.size());
+        assertEquals(3, users.get(0).getId());
     }
 
+    /**
+     * Verify successful get by property (like match)
+     */
     @Test
-    void getUserByLastNameSuccess() {
-        String lastName = "tillman";
-        List<User> retrievedLastName = dao.getUserByLastName(lastName);
-        List<User> expectedLastName = dao.getUserByLastName("tillman");
-        assertEquals(retrievedLastName, expectedLastName);
-
+    void getByPropertyLikeSuccess() {
+        List<User> users = dao.getByPropertyLike("lastName", "c");
+        assertEquals(3, users.size());
     }
-
-
 
 }
