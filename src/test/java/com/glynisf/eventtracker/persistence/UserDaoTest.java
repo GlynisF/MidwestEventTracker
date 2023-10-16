@@ -108,7 +108,7 @@ class UserDaoTest {
         userToUpdate.setFirstName(newUser);
         dao.saveOrUpdate(userToUpdate);
         User retrievedUser = dao.getById(3);
-        assertEquals(newUser, retrievedUser.getFirstName());
+        assertEquals(userToUpdate, retrievedUser);
         logger.info(retrievedUser);
         logger.info(userToUpdate);
     }

@@ -3,6 +3,7 @@ package com.glynisf.eventtracker.entity;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import java.util.Objects;
 
 /**
  * The type Notebook.
@@ -92,6 +93,19 @@ public class Notebook {
      */
     public void setUser(User user) {
         this.user = user;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Notebook notebook = (Notebook) o;
+        return id == notebook.id && Objects.equals(title, notebook.title) && Objects.equals(user, notebook.user);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, title, user);
     }
 
     @Override

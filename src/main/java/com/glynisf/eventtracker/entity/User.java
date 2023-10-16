@@ -6,6 +6,7 @@ import javax.persistence.*;
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
 import java.util.HashSet;
+import java.util.Objects;
 import java.util.Set;
 
 import static com.mysql.cj.conf.PropertyKey.logger;
@@ -255,6 +256,19 @@ public class User {
     public void removeNotebook(Notebook notebook) {
         notebooks.remove(notebook);
         notebook.setUser(null);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        User user = (User) o;
+        return id == user.id && Objects.equals(password, user.password) && Objects.equals(firstName, user.firstName) && Objects.equals(lastName, user.lastName) && Objects.equals(userName, user.userName) && Objects.equals(dateOfBirth, user.dateOfBirth) && Objects.equals(email, user.email) && Objects.equals(gender, user.gender);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(password, firstName, lastName, userName, dateOfBirth, email, gender, id);
     }
 
     @Override

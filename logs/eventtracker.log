@@ -693,3 +693,86 @@ com.mysql.cj.jdbc.exceptions.MySQLTransactionRollbackException: Lock wait timeou
 [INFO ] 2023-10-16 03:33:07.982 [main] UserDaoTest - User{password='wahoo11', firstName='Glynis', lastName='Fisher', userName='gfisher', dateOfBirth=1992-08-11, email='gcadagfisher@email.com', gender='F', id=273}
 [INFO ] 2023-10-16 03:33:53.415 [http-nio-8080-exec-6] UserSignUp - M
 [INFO ] 2023-10-16 03:33:53.415 [http-nio-8080-exec-6] UserSignUp - glyniscfisher@gmail.com1234
+[INFO ] 2023-10-16 08:12:26.813 [main] UserDaoTest - com.glynisf.test.util.Database@1fb2eec
+[INFO ] 2023-10-16 08:12:26.980 [main] UserDaoTest - User{password='supersecret3', firstName='chupi', lastName='Curry', userName='bcurry', dateOfBirth=1947-11-11, email='bcurry@email.com', gender='NB', id=3}
+[INFO ] 2023-10-16 08:12:26.990 [main] UserDaoTest - User{password='supersecret3', firstName='chupi', lastName='Curry', userName='bcurry', dateOfBirth=1947-11-11, email='bcurry@email.com', gender='NB', id=3}
+[INFO ] 2023-10-16 08:55:51.531 [main] NotebookDaoTest - com.glynisf.test.util.Database@1fb2eec
+[INFO ] 2023-10-16 09:16:10.019 [main] NotebookDaoTest - com.glynisf.test.util.Database@51e7589f
+[INFO ] 2023-10-16 09:16:10.289 [main] NotebookDaoTest - Notebook{id=3, title='October 2023', user=User{password='supersecret3', firstName='Barney', lastName='Curry', userName='bcurry', dateOfBirth=1947-11-11, email='bcurry@email.com', gender='NB', id=3}}
+[INFO ] 2023-10-16 09:16:10.319 [main] NotebookDaoTest - Notebook{id=3, title='October 2023', user=User{password='supersecret3', firstName='Barney', lastName='Curry', userName='bcurry', dateOfBirth=1947-11-11, email='bcurry@email.com', gender='NB', id=3}}
+[INFO ] 2023-10-16 09:16:12.564 [main] NotebookDaoTest - com.glynisf.test.util.Database@4c18516
+[INFO ] 2023-10-16 09:16:12.715 [main] NotebookDaoTest - Notebook{id=3, title='October 2023', user=User{password='supersecret3', firstName='Barney', lastName='Curry', userName='bcurry', dateOfBirth=1947-11-11, email='bcurry@email.com', gender='NB', id=3}}
+[INFO ] 2023-10-16 09:16:12.735 [main] NotebookDaoTest - Notebook{id=3, title='October 2023', user=User{password='supersecret3', firstName='Barney', lastName='Curry', userName='bcurry', dateOfBirth=1947-11-11, email='bcurry@email.com', gender='NB', id=3}}
+[INFO ] 2023-10-16 09:19:15.657 [main] NotebookDaoTest - com.glynisf.test.util.Database@2a0b901c
+[INFO ] 2023-10-16 09:19:15.814 [main] NotebookDaoTest - Notebook{id=3, title='October 2023', user=User{password='supersecret3', firstName='Barney', lastName='Curry', userName='bcurry', dateOfBirth=1947-11-11, email='bcurry@email.com', gender='NB', id=3}}
+[INFO ] 2023-10-16 09:19:15.831 [main] NotebookDaoTest - Notebook{id=3, title='October 2023', user=User{password='supersecret3', firstName='Barney', lastName='Curry', userName='bcurry', dateOfBirth=1947-11-11, email='bcurry@email.com', gender='NB', id=3}}
+[INFO ] 2023-10-16 09:24:55.702 [main] NotebookDaoTest - com.glynisf.test.util.Database@4c18516
+[INFO ] 2023-10-16 09:28:06.046 [main] NotebookDaoTest - com.glynisf.test.util.Database@2a0b901c
+[DEBUG] 2023-10-16 09:28:06.181 [main] GenericDao - Searching for notebook with title = October 2023
+[INFO ] 2023-10-16 09:30:38.460 [main] NotebookDaoTest - com.glynisf.test.util.Database@2a0b901c
+[DEBUG] 2023-10-16 09:30:38.605 [main] GenericDao - Searching for notebook with title = October 2023
+[INFO ] 2023-10-16 09:30:38.728 [main] NotebookDaoTest - [Notebook{id=3, title='October 2023', user=User{password='supersecret3', firstName='Barney', lastName='Curry', userName='bcurry', dateOfBirth=1947-11-11, email='bcurry@email.com', gender='NB', id=3}}]
+[INFO ] 2023-10-16 09:30:38.748 [main] NotebookDaoTest - Notebook{id=3, title='October 2023', user=User{password='supersecret3', firstName='Barney', lastName='Curry', userName='bcurry', dateOfBirth=1947-11-11, email='bcurry@email.com', gender='NB', id=3}}
+[INFO ] 2023-10-16 09:34:58.840 [main] NotebookDaoTest - com.glynisf.test.util.Database@2a0b901c
+[DEBUG] 2023-10-16 09:34:58.978 [main] GenericDao - Searching for notebook with id = 3
+[INFO ] 2023-10-16 09:36:03.749 [main] NotebookDaoTest - com.glynisf.test.util.Database@4c18516
+[DEBUG] 2023-10-16 09:36:03.886 [main] GenericDao - Searching for notebook with id = 3
+[INFO ] 2023-10-16 09:37:02.043 [main] NotebookDaoTest - com.glynisf.test.util.Database@2a0b901c
+[DEBUG] 2023-10-16 09:37:02.179 [main] GenericDao - Searching for notebook with id = 3
+[INFO ] 2023-10-16 09:39:50.806 [main] NotebookDaoTest - com.glynisf.test.util.Database@7d30007d
+[DEBUG] 2023-10-16 09:39:50.937 [main] GenericDao - Searching for notebook with title = October 2023
+[INFO ] 2023-10-16 09:39:51.058 [main] NotebookDaoTest - [Notebook{id=3, title='October 2023', user=User{password='supersecret3', firstName='Barney', lastName='Curry', userName='bcurry', dateOfBirth=1947-11-11, email='bcurry@email.com', gender='NB', id=3}}]
+[INFO ] 2023-10-16 09:39:51.073 [main] NotebookDaoTest - Notebook{id=3, title='October 2023', user=User{password='supersecret3', firstName='Barney', lastName='Curry', userName='bcurry', dateOfBirth=1947-11-11, email='bcurry@email.com', gender='NB', id=3}}
+[INFO ] 2023-10-16 09:41:55.661 [main] NotebookDaoTest - com.glynisf.test.util.Database@2a0b901c
+[DEBUG] 2023-10-16 09:41:55.806 [main] GenericDao - Searching for notebook with title = October 2023
+[DEBUG] 2023-10-16 09:41:55.927 [main] GenericDao - Searching for notebook with id = 3
+[INFO ] 2023-10-16 09:41:55.944 [main] NotebookDaoTest - [Notebook{id=3, title='October 2023', user=User{password='supersecret3', firstName='Barney', lastName='Curry', userName='bcurry', dateOfBirth=1947-11-11, email='bcurry@email.com', gender='NB', id=3}}]
+[INFO ] 2023-10-16 09:41:55.959 [main] NotebookDaoTest - Notebook{id=3, title='October 2023', user=User{password='supersecret3', firstName='Barney', lastName='Curry', userName='bcurry', dateOfBirth=1947-11-11, email='bcurry@email.com', gender='NB', id=3}}
+[INFO ] 2023-10-16 09:42:57.434 [main] NotebookDaoTest - com.glynisf.test.util.Database@2a0b901c
+[DEBUG] 2023-10-16 09:42:57.570 [main] GenericDao - Searching for notebook with title = October 2023
+[DEBUG] 2023-10-16 09:42:57.697 [main] GenericDao - Searching for notebook with id = 3
+[INFO ] 2023-10-16 09:42:57.721 [main] NotebookDaoTest - [Notebook{id=3, title='October 2023', user=User{password='supersecret3', firstName='Barney', lastName='Curry', userName='bcurry', dateOfBirth=1947-11-11, email='bcurry@email.com', gender='NB', id=3}}]
+[INFO ] 2023-10-16 09:42:57.742 [main] NotebookDaoTest - Notebook{id=3, title='October 2023', user=User{password='supersecret3', firstName='Barney', lastName='Curry', userName='bcurry', dateOfBirth=1947-11-11, email='bcurry@email.com', gender='NB', id=3}}
+[INFO ] 2023-10-16 09:44:23.739 [main] NotebookDaoTest - com.glynisf.test.util.Database@22a6d75c
+[DEBUG] 2023-10-16 09:44:23.874 [main] GenericDao - Searching for notebook with title = October 2023
+[DEBUG] 2023-10-16 09:44:23.985 [main] GenericDao - Searching for notebook with id = 3
+[INFO ] 2023-10-16 09:45:55.452 [main] NotebookDaoTest - com.glynisf.test.util.Database@3d104c9b
+[DEBUG] 2023-10-16 09:45:55.583 [main] GenericDao - Searching for notebook with title = October 2023
+[DEBUG] 2023-10-16 09:45:55.704 [main] GenericDao - Searching for notebook with id = 3
+[INFO ] 2023-10-16 09:45:55.721 [main] NotebookDaoTest - [Notebook{id=3, title='October 2023', user=User{password='supersecret3', firstName='Barney', lastName='Curry', userName='bcurry', dateOfBirth=1947-11-11, email='bcurry@email.com', gender='NB', id=3}}]
+[INFO ] 2023-10-16 09:45:55.737 [main] NotebookDaoTest - Notebook{id=3, title='October 2023', user=User{password='supersecret3', firstName='Barney', lastName='Curry', userName='bcurry', dateOfBirth=1947-11-11, email='bcurry@email.com', gender='NB', id=3}}
+[INFO ] 2023-10-16 09:48:41.061 [main] NotebookDaoTest - com.glynisf.test.util.Database@2a0b901c
+[DEBUG] 2023-10-16 09:48:41.116 [main] GenericDao - Searching for notebook with title = October Events
+[INFO ] 2023-10-16 09:51:25.824 [main] NotebookDaoTest - com.glynisf.test.util.Database@1fb2eec
+[DEBUG] 2023-10-16 09:51:25.869 [main] GenericDao - Searching for user with title = O
+[INFO ] 2023-10-16 09:52:24.871 [main] NotebookDaoTest - com.glynisf.test.util.Database@2a0b901c
+[DEBUG] 2023-10-16 09:52:24.920 [main] GenericDao - Searching for user with title = D
+[INFO ] 2023-10-16 09:53:03.606 [main] NotebookDaoTest - com.glynisf.test.util.Database@7d30007d
+[DEBUG] 2023-10-16 09:53:03.654 [main] GenericDao - Searching for user with title = D
+[INFO ] 2023-10-16 09:56:16.013 [main] NotebookDaoTest - com.glynisf.test.util.Database@4c18516
+[DEBUG] 2023-10-16 09:56:16.058 [main] GenericDao - Searching for user with title = D
+[DEBUG] 2023-10-16 09:56:16.229 [main] GenericDao - Searching for notebook with title = December Events
+[INFO ] 2023-10-16 10:05:46.395 [main] NotebookDaoTest - com.glynisf.test.util.Database@4c18516
+[INFO ] 2023-10-16 10:05:46.546 [main] NotebookDaoTest - null
+[INFO ] 2023-10-16 10:07:25.030 [main] NotebookDaoTest - com.glynisf.test.util.Database@2a0b901c
+[INFO ] 2023-10-16 10:09:06.451 [main] NotebookDaoTest - com.glynisf.test.util.Database@2a0b901c
+[INFO ] 2023-10-16 10:14:39.062 [main] NotebookDaoTest - com.glynisf.test.util.Database@4c18516
+[INFO ] 2023-10-16 10:23:10.717 [main] NotebookDaoTest - com.glynisf.test.util.Database@4c18516
+[INFO ] 2023-10-16 10:23:10.871 [main] NotebookDaoTest - Notebook{id=30, title='October Events', user=User{password='supersecret1', firstName='Joe', lastName='Coyne', userName='jcoyne', dateOfBirth=1964-04-01, email='jcoyne@email.com', gender='F', id=1}}
+[INFO ] 2023-10-16 10:29:39.889 [main] NotebookDaoTest - com.glynisf.test.util.Database@4c18516
+[INFO ] 2023-10-16 10:29:40.030 [main] NotebookDaoTest - Notebook{id=31, title='October Events', user=User{password='supersecret1', firstName='Joe', lastName='Coyne', userName='jcoyne', dateOfBirth=1964-04-01, email='jcoyne@email.com', gender='F', id=1}}
+[INFO ] 2023-10-16 10:35:48.226 [main] NotebookDaoTest - com.glynisf.test.util.Database@4c18516
+[INFO ] 2023-10-16 10:42:01.424 [main] NotebookDaoTest - com.glynisf.test.util.Database@1fb2eec
+[INFO ] 2023-10-16 10:42:01.576 [main] NotebookDaoTest - null
+[INFO ] 2023-10-16 10:42:01.604 [main] NotebookDaoTest - com.glynisf.test.util.Database@1fb2eec
+[DEBUG] 2023-10-16 10:42:01.629 [main] GenericDao - Searching for notebook with title = October 2023
+[DEBUG] 2023-10-16 10:42:01.764 [main] GenericDao - Searching for notebook with id = 3
+[INFO ] 2023-10-16 10:42:01.810 [main] NotebookDaoTest - com.glynisf.test.util.Database@1fb2eec
+[INFO ] 2023-10-16 10:42:01.851 [main] NotebookDaoTest - Notebook{id=32, title='October Events', user=User{password='supersecret1', firstName='Joe', lastName='Coyne', userName='jcoyne', dateOfBirth=1964-04-01, email='jcoyne@email.com', gender='F', id=1}}
+[INFO ] 2023-10-16 10:42:01.898 [main] NotebookDaoTest - com.glynisf.test.util.Database@1fb2eec
+[DEBUG] 2023-10-16 10:42:01.898 [main] GenericDao - Searching for notebook with title = October Events
+[INFO ] 2023-10-16 10:42:01.931 [main] NotebookDaoTest - com.glynisf.test.util.Database@1fb2eec
+[DEBUG] 2023-10-16 10:42:01.932 [main] GenericDao - Searching for user with title = D
+[DEBUG] 2023-10-16 10:42:01.947 [main] GenericDao - Searching for notebook with title = December Events
+[INFO ] 2023-10-16 10:42:01.977 [main] NotebookDaoTest - com.glynisf.test.util.Database@1fb2eec
+[INFO ] 2023-10-16 10:42:02.009 [main] NotebookDaoTest - com.glynisf.test.util.Database@1fb2eec
