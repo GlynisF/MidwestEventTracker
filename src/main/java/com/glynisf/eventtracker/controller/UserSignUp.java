@@ -1,6 +1,7 @@
 package com.glynisf.eventtracker.controller;
 
 import com.glynisf.eventtracker.entity.User;
+import com.glynisf.eventtracker.persistence.GenericDao;
 import com.glynisf.eventtracker.persistence.UserDao;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -25,6 +26,7 @@ public class UserSignUp extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         UserDao dao = new UserDao();
+        GenericDao gd = new GenericDao(User.class);
         String firstName = req.getParameter("first_name");
         String lastName = req.getParameter("last_name");
         String userName = req.getParameter("user_name");
@@ -33,9 +35,9 @@ public class UserSignUp extends HttpServlet {
         String email = req.getParameter("email_address");
         LocalDate birthdate = LocalDate.parse(req.getParameter("date_of_birth"));
         User user = new User(firstName, lastName, userName, email, 0, password, birthdate, gender);
-        int id = dao.insert(user);
+        int id = gd.insert(user);
         req.setAttribute("users2", id);
-        req.setAttribute("users", dao.getAllUsers());
+        req.setAttribute("users", gd.getAll());
 
         logger.info(gender);
         logger.info(email);
