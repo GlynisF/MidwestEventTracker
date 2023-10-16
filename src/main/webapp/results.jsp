@@ -24,14 +24,20 @@
                     <th>Last Name</th>
                     <th>User Name</th>
                     <th>Email</th>
+                    <th>Notebook Title</th>
                 </tr>
                 </thead>
                 <c:forEach var="user" items="${users}">
-                    <tr>
+                    <td>
                         <td>${user.firstName}</td>
                         <td>${user.lastName}</td>
                         <td>${user.userName}</td>
                         <td>${user.email}</td>
+                        <td>
+                        <c:forEach var="notebook" items="${user.notebooks}">
+                        ${notebook.id} ${notebook}
+                        </c:forEach>
+                    </td>
                     </tr>
                 </c:forEach>
             </table>

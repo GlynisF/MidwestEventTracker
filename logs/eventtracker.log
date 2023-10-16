@@ -172,3 +172,524 @@
 [INFO ] 2023-10-16 02:33:28.730 [main] UserDaoTest - com.glynisf.test.util.Database@3f6cce7f
 [INFO ] 2023-10-16 02:33:28.798 [main] UserDaoTest - com.glynisf.test.util.Database@3f6cce7f
 [INFO ] 2023-10-16 02:33:28.815 [main] UserDaoTest - User{password='wahoo11', firstName='Glynis', lastName='Fisher', userName='gfisher', dateOfBirth=1992-08-11, email='gcadagfisher@email.com', gender='F', id=271}
+[INFO ] 2023-10-16 03:11:26.535 [main] NotebookDaoTest - com.glynisf.test.util.Database@5b48f0f4
+[INFO ] 2023-10-16 03:11:26.690 [main] NotebookDaoTest - null
+[INFO ] 2023-10-16 03:11:26.719 [main] NotebookDaoTest - com.glynisf.test.util.Database@5b48f0f4
+[INFO ] 2023-10-16 03:11:26.749 [main] NotebookDaoTest - Notebook{id=3, title='October 2023', user=User{password='supersecret3', firstName='Barney', lastName='Curry', userName='bcurry', dateOfBirth=1947-11-11, email='bcurry@email.com', gender='NB', id=3}}
+[INFO ] 2023-10-16 03:11:26.767 [main] NotebookDaoTest - Notebook{id=3, title='October 2023', user=User{password='supersecret3', firstName='Barney', lastName='Curry', userName='bcurry', dateOfBirth=1947-11-11, email='bcurry@email.com', gender='NB', id=3}}
+[INFO ] 2023-10-16 03:11:26.789 [main] NotebookDaoTest - com.glynisf.test.util.Database@5b48f0f4
+[INFO ] 2023-10-16 03:11:26.827 [main] NotebookDaoTest - Notebook{id=28, title='October Events', user=User{password='supersecret1', firstName='Joe', lastName='Coyne', userName='jcoyne', dateOfBirth=1964-04-01, email='jcoyne@email.com', gender='F', id=1}}
+[INFO ] 2023-10-16 03:11:26.860 [main] NotebookDaoTest - com.glynisf.test.util.Database@5b48f0f4
+[DEBUG] 2023-10-16 03:11:26.866 [main] NotebookDao - Searching for Notebook with title = October Events
+[INFO ] 2023-10-16 03:11:27.068 [main] NotebookDaoTest - com.glynisf.test.util.Database@5b48f0f4
+[DEBUG] 2023-10-16 03:11:27.069 [main] NotebookDao - Searching for Notebook with title = O
+[INFO ] 2023-10-16 03:11:27.108 [main] NotebookDaoTest - com.glynisf.test.util.Database@5b48f0f4
+[INFO ] 2023-10-16 03:11:27.142 [main] NotebookDaoTest - com.glynisf.test.util.Database@5b48f0f4
+[INFO ] 2023-10-16 03:11:27.202 [main] UserDaoTest - com.glynisf.test.util.Database@5b48f0f4
+[INFO ] 2023-10-16 03:11:27.234 [main] UserDaoTest - null
+[INFO ] 2023-10-16 03:11:27.259 [main] UserDaoTest - com.glynisf.test.util.Database@5b48f0f4
+[INFO ] 2023-10-16 03:11:27.281 [main] UserDaoTest - User{password='supersecret3', firstName='chupi', lastName='Curry', userName='bcurry', dateOfBirth=1947-11-11, email='bcurry@email.com', gender='NB', id=3}
+[INFO ] 2023-10-16 03:11:27.281 [main] UserDaoTest - User{password='supersecret3', firstName='chupi', lastName='Curry', userName='bcurry', dateOfBirth=1947-11-11, email='bcurry@email.com', gender='NB', id=3}
+[INFO ] 2023-10-16 03:11:27.302 [main] UserDaoTest - com.glynisf.test.util.Database@5b48f0f4
+[DEBUG] 2023-10-16 03:11:27.304 [main] UserDao - Searching for user with lastName = Curry
+[INFO ] 2023-10-16 03:11:27.337 [main] UserDaoTest - com.glynisf.test.util.Database@5b48f0f4
+[DEBUG] 2023-10-16 03:11:27.338 [main] UserDao - Searching for user with lastName = c
+[INFO ] 2023-10-16 03:11:27.369 [main] UserDaoTest - com.glynisf.test.util.Database@5b48f0f4
+[INFO ] 2023-10-16 03:11:27.391 [main] UserDaoTest - com.glynisf.test.util.Database@5b48f0f4
+[DEBUG] 2023-10-16 03:11:27.391 [main] UserDao - Searching for: c
+[INFO ] 2023-10-16 03:11:27.419 [main] UserDaoTest - com.glynisf.test.util.Database@5b48f0f4
+[INFO ] 2023-10-16 03:11:27.436 [main] UserDaoTest - User{password='wahoo11', firstName='Glynis', lastName='Fisher', userName='gfisher', dateOfBirth=1992-08-11, email='gcadagfisher@email.com', gender='F', id=272}
+[INFO ] 2023-10-16 03:11:27.456 [main] UserDaoTest - com.glynisf.test.util.Database@5b48f0f4
+[INFO ] 2023-10-16 03:11:27.507 [main] UserDaoTest - com.glynisf.test.util.Database@5b48f0f4
+[INFO ] 2023-10-16 03:11:27.523 [main] UserDaoTest - User{password='wahoo11', firstName='Glynis', lastName='Fisher', userName='gfisher', dateOfBirth=1992-08-11, email='gcadagfisher@email.com', gender='F', id=273}
+[INFO ] 2023-10-16 03:22:06.279 [main] NotebookDaoTest - com.glynisf.test.util.Database@5b48f0f4
+[INFO ] 2023-10-16 03:22:06.430 [main] NotebookDaoTest - com.glynisf.test.util.Database@5b48f0f4
+[INFO ] 2023-10-16 03:22:06.465 [main] NotebookDaoTest - com.glynisf.test.util.Database@5b48f0f4
+[INFO ] 2023-10-16 03:22:06.506 [main] NotebookDaoTest - com.glynisf.test.util.Database@5b48f0f4
+[DEBUG] 2023-10-16 03:22:06.513 [main] NotebookDao - Searching for Notebook with title = October Events
+[INFO ] 2023-10-16 03:22:06.738 [main] NotebookDaoTest - com.glynisf.test.util.Database@5b48f0f4
+[DEBUG] 2023-10-16 03:22:06.739 [main] NotebookDao - Searching for Notebook with title = O
+[INFO ] 2023-10-16 03:22:06.786 [main] NotebookDaoTest - com.glynisf.test.util.Database@5b48f0f4
+[INFO ] 2023-10-16 03:22:06.825 [main] NotebookDaoTest - com.glynisf.test.util.Database@5b48f0f4
+[INFO ] 2023-10-16 03:22:06.905 [main] UserDaoTest - com.glynisf.test.util.Database@5b48f0f4
+[INFO ] 2023-10-16 03:22:06.953 [main] UserDaoTest - com.glynisf.test.util.Database@5b48f0f4
+[INFO ] 2023-10-16 03:22:06.994 [main] UserDaoTest - com.glynisf.test.util.Database@5b48f0f4
+[DEBUG] 2023-10-16 03:22:06.995 [main] UserDao - Searching for user with lastName = Curry
+[INFO ] 2023-10-16 03:22:07.074 [main] UserDaoTest - com.glynisf.test.util.Database@5b48f0f4
+[DEBUG] 2023-10-16 03:22:07.075 [main] UserDao - Searching for user with lastName = c
+[INFO ] 2023-10-16 03:22:07.117 [main] UserDaoTest - com.glynisf.test.util.Database@5b48f0f4
+[INFO ] 2023-10-16 03:22:07.153 [main] UserDaoTest - com.glynisf.test.util.Database@5b48f0f4
+[DEBUG] 2023-10-16 03:22:07.154 [main] UserDao - Searching for: c
+[INFO ] 2023-10-16 03:22:07.200 [main] UserDaoTest - com.glynisf.test.util.Database@5b48f0f4
+[ERROR] 2023-10-16 03:22:57.799 [main] Database - SQL Exception
+com.mysql.cj.jdbc.exceptions.MySQLTransactionRollbackException: Lock wait timeout exceeded; try restarting transaction
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:123) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1355) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2128) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1264) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.glynisf.test.util.Database.runSQL(Database.java:114) ~[test-classes/:?]
+	at com.glynisf.eventtracker.persistence.UserDaoTest.setUp(UserDaoTest.java:35) ~[test-classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:389) ~[junit-platform-commons-1.0.0.jar:1.0.0]
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:115) ~[junit-jupiter-engine-5.0.0.jar:5.0.0]
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.invokeMethodInExtensionContext(ClassTestDescriptor.java:289) ~[junit-jupiter-engine-5.0.0.jar:5.0.0]
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.lambda$synthesizeBeforeEachMethodAdapter$11(ClassTestDescriptor.java:277) ~[junit-jupiter-engine-5.0.0.jar:5.0.0]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$null$2(TestMethodTestDescriptor.java:132) ~[junit-jupiter-engine-5.0.0.jar:5.0.0]
+	at org.junit.jupiter.engine.execution.ThrowableCollector.execute(ThrowableCollector.java:40) ~[junit-jupiter-engine-5.0.0.jar:5.0.0]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeBeforeMethodsOrCallbacksUntilExceptionOccurs(TestMethodTestDescriptor.java:152) ~[junit-jupiter-engine-5.0.0.jar:5.0.0]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeBeforeEachMethods(TestMethodTestDescriptor.java:131) ~[junit-jupiter-engine-5.0.0.jar:5.0.0]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:106) ~[junit-jupiter-engine-5.0.0.jar:5.0.0]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:57) ~[junit-jupiter-engine-5.0.0.jar:5.0.0]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.lambda$execute$3(HierarchicalTestExecutor.java:83) ~[junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.SingleTestExecutor.executeSafely(SingleTestExecutor.java:66) ~[junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:77) ~[junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.lambda$null$2(HierarchicalTestExecutor.java:92) ~[junit-platform-engine-1.0.0.jar:1.0.0]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183) ~[?:?]
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177) ~[?:?]
+	at java.util.Iterator.forEachRemaining(Iterator.java:133) ~[?:?]
+	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484) ~[?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) ~[?:?]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497) ~[?:?]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.lambda$execute$3(HierarchicalTestExecutor.java:92) ~[junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.SingleTestExecutor.executeSafely(SingleTestExecutor.java:66) ~[junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:77) ~[junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.lambda$null$2(HierarchicalTestExecutor.java:92) ~[junit-platform-engine-1.0.0.jar:1.0.0]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183) ~[?:?]
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177) ~[?:?]
+	at java.util.Iterator.forEachRemaining(Iterator.java:133) ~[?:?]
+	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484) ~[?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) ~[?:?]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497) ~[?:?]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.lambda$execute$3(HierarchicalTestExecutor.java:92) ~[junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.SingleTestExecutor.executeSafely(SingleTestExecutor.java:66) [junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:77) [junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:51) [junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:43) [junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:170) [junit-platform-launcher-1.0.0.jar:1.0.0]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:154) [junit-platform-launcher-1.0.0.jar:1.0.0]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:90) [junit-platform-launcher-1.0.0.jar:1.0.0]
+	at org.junit.platform.surefire.provider.JUnitPlatformProvider.invokeSingleClass(JUnitPlatformProvider.java:144) [junit-platform-surefire-provider-1.0.0.jar:1.0.0]
+	at org.junit.platform.surefire.provider.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:126) [junit-platform-surefire-provider-1.0.0.jar:1.0.0]
+	at org.junit.platform.surefire.provider.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:105) [junit-platform-surefire-provider-1.0.0.jar:1.0.0]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:286) [surefire-booter-2.19.jar:2.19]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:240) [surefire-booter-2.19.jar:2.19]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121) [surefire-booter-2.19.jar:2.19]
+[INFO ] 2023-10-16 03:22:57.800 [main] UserDaoTest - com.glynisf.test.util.Database@5b48f0f4
+[ERROR] 2023-10-16 03:23:48.355 [main] Database - SQL Exception
+com.mysql.cj.jdbc.exceptions.MySQLTransactionRollbackException: Lock wait timeout exceeded; try restarting transaction
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:123) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1355) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2128) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1264) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.glynisf.test.util.Database.runSQL(Database.java:114) ~[test-classes/:?]
+	at com.glynisf.eventtracker.persistence.UserDaoTest.setUp(UserDaoTest.java:35) ~[test-classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:389) ~[junit-platform-commons-1.0.0.jar:1.0.0]
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:115) ~[junit-jupiter-engine-5.0.0.jar:5.0.0]
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.invokeMethodInExtensionContext(ClassTestDescriptor.java:289) ~[junit-jupiter-engine-5.0.0.jar:5.0.0]
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.lambda$synthesizeBeforeEachMethodAdapter$11(ClassTestDescriptor.java:277) ~[junit-jupiter-engine-5.0.0.jar:5.0.0]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$null$2(TestMethodTestDescriptor.java:132) ~[junit-jupiter-engine-5.0.0.jar:5.0.0]
+	at org.junit.jupiter.engine.execution.ThrowableCollector.execute(ThrowableCollector.java:40) ~[junit-jupiter-engine-5.0.0.jar:5.0.0]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeBeforeMethodsOrCallbacksUntilExceptionOccurs(TestMethodTestDescriptor.java:152) ~[junit-jupiter-engine-5.0.0.jar:5.0.0]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeBeforeEachMethods(TestMethodTestDescriptor.java:131) ~[junit-jupiter-engine-5.0.0.jar:5.0.0]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:106) ~[junit-jupiter-engine-5.0.0.jar:5.0.0]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:57) ~[junit-jupiter-engine-5.0.0.jar:5.0.0]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.lambda$execute$3(HierarchicalTestExecutor.java:83) ~[junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.SingleTestExecutor.executeSafely(SingleTestExecutor.java:66) ~[junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:77) ~[junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.lambda$null$2(HierarchicalTestExecutor.java:92) ~[junit-platform-engine-1.0.0.jar:1.0.0]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183) ~[?:?]
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177) ~[?:?]
+	at java.util.Iterator.forEachRemaining(Iterator.java:133) ~[?:?]
+	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484) ~[?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) ~[?:?]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497) ~[?:?]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.lambda$execute$3(HierarchicalTestExecutor.java:92) ~[junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.SingleTestExecutor.executeSafely(SingleTestExecutor.java:66) ~[junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:77) ~[junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.lambda$null$2(HierarchicalTestExecutor.java:92) ~[junit-platform-engine-1.0.0.jar:1.0.0]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183) ~[?:?]
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177) ~[?:?]
+	at java.util.Iterator.forEachRemaining(Iterator.java:133) ~[?:?]
+	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484) ~[?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) ~[?:?]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497) ~[?:?]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.lambda$execute$3(HierarchicalTestExecutor.java:92) ~[junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.SingleTestExecutor.executeSafely(SingleTestExecutor.java:66) [junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:77) [junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:51) [junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:43) [junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:170) [junit-platform-launcher-1.0.0.jar:1.0.0]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:154) [junit-platform-launcher-1.0.0.jar:1.0.0]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:90) [junit-platform-launcher-1.0.0.jar:1.0.0]
+	at org.junit.platform.surefire.provider.JUnitPlatformProvider.invokeSingleClass(JUnitPlatformProvider.java:144) [junit-platform-surefire-provider-1.0.0.jar:1.0.0]
+	at org.junit.platform.surefire.provider.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:126) [junit-platform-surefire-provider-1.0.0.jar:1.0.0]
+	at org.junit.platform.surefire.provider.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:105) [junit-platform-surefire-provider-1.0.0.jar:1.0.0]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:286) [surefire-booter-2.19.jar:2.19]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:240) [surefire-booter-2.19.jar:2.19]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121) [surefire-booter-2.19.jar:2.19]
+[INFO ] 2023-10-16 03:23:48.357 [main] UserDaoTest - com.glynisf.test.util.Database@5b48f0f4
+[INFO ] 2023-10-16 03:24:50.368 [main] NotebookDaoTest - com.glynisf.test.util.Database@5b48f0f4
+[INFO ] 2023-10-16 03:24:50.509 [main] NotebookDaoTest - com.glynisf.test.util.Database@5b48f0f4
+[INFO ] 2023-10-16 03:24:50.540 [main] NotebookDaoTest - com.glynisf.test.util.Database@5b48f0f4
+[INFO ] 2023-10-16 03:24:50.574 [main] NotebookDaoTest - com.glynisf.test.util.Database@5b48f0f4
+[DEBUG] 2023-10-16 03:24:50.579 [main] NotebookDao - Searching for Notebook with title = October Events
+[INFO ] 2023-10-16 03:24:50.773 [main] NotebookDaoTest - com.glynisf.test.util.Database@5b48f0f4
+[DEBUG] 2023-10-16 03:24:50.773 [main] NotebookDao - Searching for Notebook with title = O
+[INFO ] 2023-10-16 03:24:50.803 [main] NotebookDaoTest - com.glynisf.test.util.Database@5b48f0f4
+[INFO ] 2023-10-16 03:24:50.826 [main] NotebookDaoTest - com.glynisf.test.util.Database@5b48f0f4
+[INFO ] 2023-10-16 03:24:50.884 [main] UserDaoTest - com.glynisf.test.util.Database@5b48f0f4
+[INFO ] 2023-10-16 03:24:50.913 [main] UserDaoTest - com.glynisf.test.util.Database@5b48f0f4
+[INFO ] 2023-10-16 03:24:50.938 [main] UserDaoTest - com.glynisf.test.util.Database@5b48f0f4
+[DEBUG] 2023-10-16 03:24:50.939 [main] UserDao - Searching for user with lastName = Curry
+[INFO ] 2023-10-16 03:24:50.997 [main] UserDaoTest - com.glynisf.test.util.Database@5b48f0f4
+[DEBUG] 2023-10-16 03:24:50.998 [main] UserDao - Searching for user with lastName = c
+[INFO ] 2023-10-16 03:24:51.051 [main] UserDaoTest - com.glynisf.test.util.Database@5b48f0f4
+[INFO ] 2023-10-16 03:24:51.087 [main] UserDaoTest - com.glynisf.test.util.Database@5b48f0f4
+[DEBUG] 2023-10-16 03:24:51.087 [main] UserDao - Searching for: c
+[INFO ] 2023-10-16 03:24:51.122 [main] UserDaoTest - com.glynisf.test.util.Database@5b48f0f4
+[ERROR] 2023-10-16 03:25:41.711 [main] Database - SQL Exception
+com.mysql.cj.jdbc.exceptions.MySQLTransactionRollbackException: Lock wait timeout exceeded; try restarting transaction
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:123) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1355) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2128) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1264) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.glynisf.test.util.Database.runSQL(Database.java:114) ~[test-classes/:?]
+	at com.glynisf.eventtracker.persistence.UserDaoTest.setUp(UserDaoTest.java:35) ~[test-classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:389) ~[junit-platform-commons-1.0.0.jar:1.0.0]
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:115) ~[junit-jupiter-engine-5.0.0.jar:5.0.0]
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.invokeMethodInExtensionContext(ClassTestDescriptor.java:289) ~[junit-jupiter-engine-5.0.0.jar:5.0.0]
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.lambda$synthesizeBeforeEachMethodAdapter$11(ClassTestDescriptor.java:277) ~[junit-jupiter-engine-5.0.0.jar:5.0.0]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$null$2(TestMethodTestDescriptor.java:132) ~[junit-jupiter-engine-5.0.0.jar:5.0.0]
+	at org.junit.jupiter.engine.execution.ThrowableCollector.execute(ThrowableCollector.java:40) ~[junit-jupiter-engine-5.0.0.jar:5.0.0]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeBeforeMethodsOrCallbacksUntilExceptionOccurs(TestMethodTestDescriptor.java:152) ~[junit-jupiter-engine-5.0.0.jar:5.0.0]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeBeforeEachMethods(TestMethodTestDescriptor.java:131) ~[junit-jupiter-engine-5.0.0.jar:5.0.0]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:106) ~[junit-jupiter-engine-5.0.0.jar:5.0.0]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:57) ~[junit-jupiter-engine-5.0.0.jar:5.0.0]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.lambda$execute$3(HierarchicalTestExecutor.java:83) ~[junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.SingleTestExecutor.executeSafely(SingleTestExecutor.java:66) ~[junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:77) ~[junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.lambda$null$2(HierarchicalTestExecutor.java:92) ~[junit-platform-engine-1.0.0.jar:1.0.0]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183) ~[?:?]
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177) ~[?:?]
+	at java.util.Iterator.forEachRemaining(Iterator.java:133) ~[?:?]
+	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484) ~[?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) ~[?:?]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497) ~[?:?]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.lambda$execute$3(HierarchicalTestExecutor.java:92) ~[junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.SingleTestExecutor.executeSafely(SingleTestExecutor.java:66) ~[junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:77) ~[junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.lambda$null$2(HierarchicalTestExecutor.java:92) ~[junit-platform-engine-1.0.0.jar:1.0.0]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183) ~[?:?]
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177) ~[?:?]
+	at java.util.Iterator.forEachRemaining(Iterator.java:133) ~[?:?]
+	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484) ~[?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) ~[?:?]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497) ~[?:?]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.lambda$execute$3(HierarchicalTestExecutor.java:92) ~[junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.SingleTestExecutor.executeSafely(SingleTestExecutor.java:66) [junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:77) [junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:51) [junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:43) [junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:170) [junit-platform-launcher-1.0.0.jar:1.0.0]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:154) [junit-platform-launcher-1.0.0.jar:1.0.0]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:90) [junit-platform-launcher-1.0.0.jar:1.0.0]
+	at org.junit.platform.surefire.provider.JUnitPlatformProvider.invokeSingleClass(JUnitPlatformProvider.java:144) [junit-platform-surefire-provider-1.0.0.jar:1.0.0]
+	at org.junit.platform.surefire.provider.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:126) [junit-platform-surefire-provider-1.0.0.jar:1.0.0]
+	at org.junit.platform.surefire.provider.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:105) [junit-platform-surefire-provider-1.0.0.jar:1.0.0]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:286) [surefire-booter-2.19.jar:2.19]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:240) [surefire-booter-2.19.jar:2.19]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121) [surefire-booter-2.19.jar:2.19]
+[INFO ] 2023-10-16 03:25:41.712 [main] UserDaoTest - com.glynisf.test.util.Database@5b48f0f4
+[ERROR] 2023-10-16 03:26:32.343 [main] Database - SQL Exception
+com.mysql.cj.jdbc.exceptions.MySQLTransactionRollbackException: Lock wait timeout exceeded; try restarting transaction
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:123) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1355) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2128) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1264) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.glynisf.test.util.Database.runSQL(Database.java:114) ~[test-classes/:?]
+	at com.glynisf.eventtracker.persistence.UserDaoTest.setUp(UserDaoTest.java:35) ~[test-classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:389) ~[junit-platform-commons-1.0.0.jar:1.0.0]
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:115) ~[junit-jupiter-engine-5.0.0.jar:5.0.0]
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.invokeMethodInExtensionContext(ClassTestDescriptor.java:289) ~[junit-jupiter-engine-5.0.0.jar:5.0.0]
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.lambda$synthesizeBeforeEachMethodAdapter$11(ClassTestDescriptor.java:277) ~[junit-jupiter-engine-5.0.0.jar:5.0.0]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$null$2(TestMethodTestDescriptor.java:132) ~[junit-jupiter-engine-5.0.0.jar:5.0.0]
+	at org.junit.jupiter.engine.execution.ThrowableCollector.execute(ThrowableCollector.java:40) ~[junit-jupiter-engine-5.0.0.jar:5.0.0]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeBeforeMethodsOrCallbacksUntilExceptionOccurs(TestMethodTestDescriptor.java:152) ~[junit-jupiter-engine-5.0.0.jar:5.0.0]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeBeforeEachMethods(TestMethodTestDescriptor.java:131) ~[junit-jupiter-engine-5.0.0.jar:5.0.0]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:106) ~[junit-jupiter-engine-5.0.0.jar:5.0.0]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:57) ~[junit-jupiter-engine-5.0.0.jar:5.0.0]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.lambda$execute$3(HierarchicalTestExecutor.java:83) ~[junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.SingleTestExecutor.executeSafely(SingleTestExecutor.java:66) ~[junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:77) ~[junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.lambda$null$2(HierarchicalTestExecutor.java:92) ~[junit-platform-engine-1.0.0.jar:1.0.0]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183) ~[?:?]
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177) ~[?:?]
+	at java.util.Iterator.forEachRemaining(Iterator.java:133) ~[?:?]
+	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484) ~[?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) ~[?:?]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497) ~[?:?]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.lambda$execute$3(HierarchicalTestExecutor.java:92) ~[junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.SingleTestExecutor.executeSafely(SingleTestExecutor.java:66) ~[junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:77) ~[junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.lambda$null$2(HierarchicalTestExecutor.java:92) ~[junit-platform-engine-1.0.0.jar:1.0.0]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183) ~[?:?]
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177) ~[?:?]
+	at java.util.Iterator.forEachRemaining(Iterator.java:133) ~[?:?]
+	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484) ~[?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) ~[?:?]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497) ~[?:?]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.lambda$execute$3(HierarchicalTestExecutor.java:92) ~[junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.SingleTestExecutor.executeSafely(SingleTestExecutor.java:66) [junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:77) [junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:51) [junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:43) [junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:170) [junit-platform-launcher-1.0.0.jar:1.0.0]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:154) [junit-platform-launcher-1.0.0.jar:1.0.0]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:90) [junit-platform-launcher-1.0.0.jar:1.0.0]
+	at org.junit.platform.surefire.provider.JUnitPlatformProvider.invokeSingleClass(JUnitPlatformProvider.java:144) [junit-platform-surefire-provider-1.0.0.jar:1.0.0]
+	at org.junit.platform.surefire.provider.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:126) [junit-platform-surefire-provider-1.0.0.jar:1.0.0]
+	at org.junit.platform.surefire.provider.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:105) [junit-platform-surefire-provider-1.0.0.jar:1.0.0]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:286) [surefire-booter-2.19.jar:2.19]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:240) [surefire-booter-2.19.jar:2.19]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121) [surefire-booter-2.19.jar:2.19]
+[INFO ] 2023-10-16 03:26:32.343 [main] UserDaoTest - com.glynisf.test.util.Database@5b48f0f4
+[INFO ] 2023-10-16 03:27:42.993 [main] NotebookDaoTest - com.glynisf.test.util.Database@5b48f0f4
+[INFO ] 2023-10-16 03:27:43.110 [main] NotebookDaoTest - com.glynisf.test.util.Database@5b48f0f4
+[INFO ] 2023-10-16 03:27:43.144 [main] NotebookDaoTest - com.glynisf.test.util.Database@5b48f0f4
+[INFO ] 2023-10-16 03:27:43.178 [main] NotebookDaoTest - com.glynisf.test.util.Database@5b48f0f4
+[DEBUG] 2023-10-16 03:27:43.183 [main] NotebookDao - Searching for Notebook with title = October Events
+[INFO ] 2023-10-16 03:27:43.366 [main] NotebookDaoTest - com.glynisf.test.util.Database@5b48f0f4
+[DEBUG] 2023-10-16 03:27:43.366 [main] NotebookDao - Searching for Notebook with title = O
+[INFO ] 2023-10-16 03:27:43.407 [main] NotebookDaoTest - com.glynisf.test.util.Database@5b48f0f4
+[INFO ] 2023-10-16 03:27:43.436 [main] NotebookDaoTest - com.glynisf.test.util.Database@5b48f0f4
+[INFO ] 2023-10-16 03:27:43.484 [main] UserDaoTest - com.glynisf.test.util.Database@5b48f0f4
+[INFO ] 2023-10-16 03:27:43.539 [main] UserDaoTest - com.glynisf.test.util.Database@5b48f0f4
+[INFO ] 2023-10-16 03:27:43.571 [main] UserDaoTest - com.glynisf.test.util.Database@5b48f0f4
+[DEBUG] 2023-10-16 03:27:43.571 [main] UserDao - Searching for user with lastName = Curry
+[INFO ] 2023-10-16 03:27:43.633 [main] UserDaoTest - com.glynisf.test.util.Database@5b48f0f4
+[DEBUG] 2023-10-16 03:27:43.634 [main] UserDao - Searching for user with lastName = c
+[INFO ] 2023-10-16 03:27:43.668 [main] UserDaoTest - com.glynisf.test.util.Database@5b48f0f4
+[INFO ] 2023-10-16 03:27:43.690 [main] UserDaoTest - com.glynisf.test.util.Database@5b48f0f4
+[DEBUG] 2023-10-16 03:27:43.690 [main] UserDao - Searching for: c
+[INFO ] 2023-10-16 03:27:43.713 [main] UserDaoTest - com.glynisf.test.util.Database@5b48f0f4
+[ERROR] 2023-10-16 03:28:34.306 [main] Database - SQL Exception
+com.mysql.cj.jdbc.exceptions.MySQLTransactionRollbackException: Lock wait timeout exceeded; try restarting transaction
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:123) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1355) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2128) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1264) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.glynisf.test.util.Database.runSQL(Database.java:114) ~[test-classes/:?]
+	at com.glynisf.eventtracker.persistence.UserDaoTest.setUp(UserDaoTest.java:35) ~[test-classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:389) ~[junit-platform-commons-1.0.0.jar:1.0.0]
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:115) ~[junit-jupiter-engine-5.0.0.jar:5.0.0]
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.invokeMethodInExtensionContext(ClassTestDescriptor.java:289) ~[junit-jupiter-engine-5.0.0.jar:5.0.0]
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.lambda$synthesizeBeforeEachMethodAdapter$11(ClassTestDescriptor.java:277) ~[junit-jupiter-engine-5.0.0.jar:5.0.0]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$null$2(TestMethodTestDescriptor.java:132) ~[junit-jupiter-engine-5.0.0.jar:5.0.0]
+	at org.junit.jupiter.engine.execution.ThrowableCollector.execute(ThrowableCollector.java:40) ~[junit-jupiter-engine-5.0.0.jar:5.0.0]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeBeforeMethodsOrCallbacksUntilExceptionOccurs(TestMethodTestDescriptor.java:152) ~[junit-jupiter-engine-5.0.0.jar:5.0.0]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeBeforeEachMethods(TestMethodTestDescriptor.java:131) ~[junit-jupiter-engine-5.0.0.jar:5.0.0]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:106) ~[junit-jupiter-engine-5.0.0.jar:5.0.0]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:57) ~[junit-jupiter-engine-5.0.0.jar:5.0.0]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.lambda$execute$3(HierarchicalTestExecutor.java:83) ~[junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.SingleTestExecutor.executeSafely(SingleTestExecutor.java:66) ~[junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:77) ~[junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.lambda$null$2(HierarchicalTestExecutor.java:92) ~[junit-platform-engine-1.0.0.jar:1.0.0]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183) ~[?:?]
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177) ~[?:?]
+	at java.util.Iterator.forEachRemaining(Iterator.java:133) ~[?:?]
+	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484) ~[?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) ~[?:?]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497) ~[?:?]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.lambda$execute$3(HierarchicalTestExecutor.java:92) ~[junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.SingleTestExecutor.executeSafely(SingleTestExecutor.java:66) ~[junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:77) ~[junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.lambda$null$2(HierarchicalTestExecutor.java:92) ~[junit-platform-engine-1.0.0.jar:1.0.0]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183) ~[?:?]
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177) ~[?:?]
+	at java.util.Iterator.forEachRemaining(Iterator.java:133) ~[?:?]
+	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484) ~[?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) ~[?:?]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497) ~[?:?]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.lambda$execute$3(HierarchicalTestExecutor.java:92) ~[junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.SingleTestExecutor.executeSafely(SingleTestExecutor.java:66) [junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:77) [junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:51) [junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:43) [junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:170) [junit-platform-launcher-1.0.0.jar:1.0.0]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:154) [junit-platform-launcher-1.0.0.jar:1.0.0]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:90) [junit-platform-launcher-1.0.0.jar:1.0.0]
+	at org.junit.platform.surefire.provider.JUnitPlatformProvider.invokeSingleClass(JUnitPlatformProvider.java:144) [junit-platform-surefire-provider-1.0.0.jar:1.0.0]
+	at org.junit.platform.surefire.provider.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:126) [junit-platform-surefire-provider-1.0.0.jar:1.0.0]
+	at org.junit.platform.surefire.provider.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:105) [junit-platform-surefire-provider-1.0.0.jar:1.0.0]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:286) [surefire-booter-2.19.jar:2.19]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:240) [surefire-booter-2.19.jar:2.19]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121) [surefire-booter-2.19.jar:2.19]
+[INFO ] 2023-10-16 03:28:34.308 [main] UserDaoTest - com.glynisf.test.util.Database@5b48f0f4
+[ERROR] 2023-10-16 03:29:24.911 [main] Database - SQL Exception
+com.mysql.cj.jdbc.exceptions.MySQLTransactionRollbackException: Lock wait timeout exceeded; try restarting transaction
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:123) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1355) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2128) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1264) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.glynisf.test.util.Database.runSQL(Database.java:114) ~[test-classes/:?]
+	at com.glynisf.eventtracker.persistence.UserDaoTest.setUp(UserDaoTest.java:35) ~[test-classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:389) ~[junit-platform-commons-1.0.0.jar:1.0.0]
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:115) ~[junit-jupiter-engine-5.0.0.jar:5.0.0]
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.invokeMethodInExtensionContext(ClassTestDescriptor.java:289) ~[junit-jupiter-engine-5.0.0.jar:5.0.0]
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.lambda$synthesizeBeforeEachMethodAdapter$11(ClassTestDescriptor.java:277) ~[junit-jupiter-engine-5.0.0.jar:5.0.0]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$null$2(TestMethodTestDescriptor.java:132) ~[junit-jupiter-engine-5.0.0.jar:5.0.0]
+	at org.junit.jupiter.engine.execution.ThrowableCollector.execute(ThrowableCollector.java:40) ~[junit-jupiter-engine-5.0.0.jar:5.0.0]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeBeforeMethodsOrCallbacksUntilExceptionOccurs(TestMethodTestDescriptor.java:152) ~[junit-jupiter-engine-5.0.0.jar:5.0.0]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeBeforeEachMethods(TestMethodTestDescriptor.java:131) ~[junit-jupiter-engine-5.0.0.jar:5.0.0]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:106) ~[junit-jupiter-engine-5.0.0.jar:5.0.0]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:57) ~[junit-jupiter-engine-5.0.0.jar:5.0.0]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.lambda$execute$3(HierarchicalTestExecutor.java:83) ~[junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.SingleTestExecutor.executeSafely(SingleTestExecutor.java:66) ~[junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:77) ~[junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.lambda$null$2(HierarchicalTestExecutor.java:92) ~[junit-platform-engine-1.0.0.jar:1.0.0]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183) ~[?:?]
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177) ~[?:?]
+	at java.util.Iterator.forEachRemaining(Iterator.java:133) ~[?:?]
+	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484) ~[?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) ~[?:?]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497) ~[?:?]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.lambda$execute$3(HierarchicalTestExecutor.java:92) ~[junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.SingleTestExecutor.executeSafely(SingleTestExecutor.java:66) ~[junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:77) ~[junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.lambda$null$2(HierarchicalTestExecutor.java:92) ~[junit-platform-engine-1.0.0.jar:1.0.0]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183) ~[?:?]
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177) ~[?:?]
+	at java.util.Iterator.forEachRemaining(Iterator.java:133) ~[?:?]
+	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484) ~[?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) ~[?:?]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497) ~[?:?]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.lambda$execute$3(HierarchicalTestExecutor.java:92) ~[junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.SingleTestExecutor.executeSafely(SingleTestExecutor.java:66) [junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:77) [junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:51) [junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:43) [junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:170) [junit-platform-launcher-1.0.0.jar:1.0.0]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:154) [junit-platform-launcher-1.0.0.jar:1.0.0]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:90) [junit-platform-launcher-1.0.0.jar:1.0.0]
+	at org.junit.platform.surefire.provider.JUnitPlatformProvider.invokeSingleClass(JUnitPlatformProvider.java:144) [junit-platform-surefire-provider-1.0.0.jar:1.0.0]
+	at org.junit.platform.surefire.provider.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:126) [junit-platform-surefire-provider-1.0.0.jar:1.0.0]
+	at org.junit.platform.surefire.provider.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:105) [junit-platform-surefire-provider-1.0.0.jar:1.0.0]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:286) [surefire-booter-2.19.jar:2.19]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:240) [surefire-booter-2.19.jar:2.19]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121) [surefire-booter-2.19.jar:2.19]
+[INFO ] 2023-10-16 03:29:24.912 [main] UserDaoTest - com.glynisf.test.util.Database@5b48f0f4
+[INFO ] 2023-10-16 03:33:07.048 [main] NotebookDaoTest - com.glynisf.test.util.Database@5b48f0f4
+[INFO ] 2023-10-16 03:33:07.211 [main] NotebookDaoTest - null
+[INFO ] 2023-10-16 03:33:07.241 [main] NotebookDaoTest - com.glynisf.test.util.Database@5b48f0f4
+[INFO ] 2023-10-16 03:33:07.270 [main] NotebookDaoTest - Notebook{id=3, title='October 2023', user=User{password='supersecret3', firstName='Barney', lastName='Curry', userName='bcurry', dateOfBirth=1947-11-11, email='bcurry@email.com', gender='NB', id=3}}
+[INFO ] 2023-10-16 03:33:07.288 [main] NotebookDaoTest - Notebook{id=3, title='October 2023', user=User{password='supersecret3', firstName='Barney', lastName='Curry', userName='bcurry', dateOfBirth=1947-11-11, email='bcurry@email.com', gender='NB', id=3}}
+[INFO ] 2023-10-16 03:33:07.310 [main] NotebookDaoTest - com.glynisf.test.util.Database@5b48f0f4
+[INFO ] 2023-10-16 03:33:07.344 [main] NotebookDaoTest - Notebook{id=28, title='October Events', user=User{password='supersecret1', firstName='Joe', lastName='Coyne', userName='jcoyne', dateOfBirth=1964-04-01, email='jcoyne@email.com', gender='F', id=1}}
+[INFO ] 2023-10-16 03:33:07.366 [main] NotebookDaoTest - com.glynisf.test.util.Database@5b48f0f4
+[DEBUG] 2023-10-16 03:33:07.372 [main] NotebookDao - Searching for Notebook with title = October Events
+[INFO ] 2023-10-16 03:33:07.522 [main] NotebookDaoTest - com.glynisf.test.util.Database@5b48f0f4
+[DEBUG] 2023-10-16 03:33:07.524 [main] NotebookDao - Searching for Notebook with title = O
+[INFO ] 2023-10-16 03:33:07.575 [main] NotebookDaoTest - com.glynisf.test.util.Database@5b48f0f4
+[INFO ] 2023-10-16 03:33:07.609 [main] NotebookDaoTest - com.glynisf.test.util.Database@5b48f0f4
+[INFO ] 2023-10-16 03:33:07.658 [main] UserDaoTest - com.glynisf.test.util.Database@5b48f0f4
+[INFO ] 2023-10-16 03:33:07.684 [main] UserDaoTest - null
+[INFO ] 2023-10-16 03:33:07.702 [main] UserDaoTest - com.glynisf.test.util.Database@5b48f0f4
+[INFO ] 2023-10-16 03:33:07.724 [main] UserDaoTest - User{password='supersecret3', firstName='chupi', lastName='Curry', userName='bcurry', dateOfBirth=1947-11-11, email='bcurry@email.com', gender='NB', id=3}
+[INFO ] 2023-10-16 03:33:07.724 [main] UserDaoTest - User{password='supersecret3', firstName='chupi', lastName='Curry', userName='bcurry', dateOfBirth=1947-11-11, email='bcurry@email.com', gender='NB', id=3}
+[INFO ] 2023-10-16 03:33:07.744 [main] UserDaoTest - com.glynisf.test.util.Database@5b48f0f4
+[DEBUG] 2023-10-16 03:33:07.745 [main] UserDao - Searching for user with lastName = Curry
+[INFO ] 2023-10-16 03:33:07.776 [main] UserDaoTest - com.glynisf.test.util.Database@5b48f0f4
+[DEBUG] 2023-10-16 03:33:07.777 [main] UserDao - Searching for user with lastName = c
+[INFO ] 2023-10-16 03:33:07.807 [main] UserDaoTest - com.glynisf.test.util.Database@5b48f0f4
+[INFO ] 2023-10-16 03:33:07.829 [main] UserDaoTest - com.glynisf.test.util.Database@5b48f0f4
+[DEBUG] 2023-10-16 03:33:07.829 [main] UserDao - Searching for: c
+[INFO ] 2023-10-16 03:33:07.863 [main] UserDaoTest - com.glynisf.test.util.Database@5b48f0f4
+[INFO ] 2023-10-16 03:33:07.884 [main] UserDaoTest - User{password='wahoo11', firstName='Glynis', lastName='Fisher', userName='gfisher', dateOfBirth=1992-08-11, email='gcadagfisher@email.com', gender='F', id=272}
+[INFO ] 2023-10-16 03:33:07.908 [main] UserDaoTest - com.glynisf.test.util.Database@5b48f0f4
+[INFO ] 2023-10-16 03:33:07.970 [main] UserDaoTest - com.glynisf.test.util.Database@5b48f0f4
+[INFO ] 2023-10-16 03:33:07.982 [main] UserDaoTest - User{password='wahoo11', firstName='Glynis', lastName='Fisher', userName='gfisher', dateOfBirth=1992-08-11, email='gcadagfisher@email.com', gender='F', id=273}
+[INFO ] 2023-10-16 03:33:53.415 [http-nio-8080-exec-6] UserSignUp - M
+[INFO ] 2023-10-16 03:33:53.415 [http-nio-8080-exec-6] UserSignUp - glyniscfisher@gmail.com1234
