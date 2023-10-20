@@ -5,20 +5,22 @@
 <!--suppress HibernateConfigDomFacetInspection -->
 <hibernate-configuration>
     <session-factory>
-        <property name="connection.url">jdbc:mysql://localhost/EventTracker</property>
+        <property name="connection.url">jdbc:mysql://awseb-e-ivvryued24-stack-awsebrdsdatabase-khjfimig9oz1.czsgd5vqo4ab.us-east-2.rds.amazonaws.com:3306/EventTracker</property>
         <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
 
-        <property name="connection.username">MySQL81</property>
-        <property name="connection.password">Woohoo081192!</property>
+        <property name="connection.username">student</property>
+        <property name="connection.password">student!</property>
 
         <property name="hibernate.c3p0.min_size">5</property>
         <property name="hibernate.c3p0.max_size">20</property>
         <property name="hibernate.c3p0.timeout">1000</property>
         <property name="hibernate.c3p0.max_statements">100</property>
         <property name="hibernate.c3p0.idle_test_period">3000</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
 
         <mapping class="com.glynisf.eventtracker.entity.User"/>
         <mapping class="com.glynisf.eventtracker.entity.Notebook"/>
+
 
 
     </session-factory>

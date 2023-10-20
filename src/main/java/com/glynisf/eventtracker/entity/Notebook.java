@@ -3,7 +3,10 @@ package com.glynisf.eventtracker.entity;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Objects;
+import java.util.Set;
 
 /**
  * The type Notebook.
@@ -20,7 +23,6 @@ public class Notebook {
     private String title;
     @ManyToOne
     private User user;
-
 
     /**
      * Instantiates a new Notebook.
@@ -40,6 +42,7 @@ public class Notebook {
         this.title = title;
         this.user = user;
     }
+
 
     /**
      * Gets id.
@@ -94,6 +97,8 @@ public class Notebook {
     public void setUser(User user) {
         this.user = user;
     }
+
+
 
     @Override
     public boolean equals(Object o) {

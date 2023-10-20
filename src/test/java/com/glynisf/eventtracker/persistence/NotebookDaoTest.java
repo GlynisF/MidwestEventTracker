@@ -20,7 +20,8 @@ class NotebookDaoTest {
     /**
      * The NotebookDao.
      */
-    GenericDao genericDao;
+    GenericDao notebookDao;
+    GenericDao userDao;
 
     private final Logger logger = LogManager.getLogger(this.getClass());
 
@@ -29,7 +30,8 @@ class NotebookDaoTest {
      */
     @BeforeEach
     void setUp() {
-        genericDao = new GenericDao(Notebook.class);
+        notebookDao = new GenericDao(Notebook.class);
+        userDao = new GenericDao(User.class);
         Database database = Database.getInstance();
         database.runSQL("cleandb.sql");
         logger.info(database);
@@ -40,7 +42,7 @@ class NotebookDaoTest {
      */
     @Test
     void getAllNotebooksSuccess() {
-        List<Notebook> notebooks = genericDao.getAll();
+        List<Notebook> notebooks = notebookDao.getAll();
         assertEquals(6, notebooks.size());
     }
 
@@ -49,15 +51,14 @@ class NotebookDaoTest {
      */
     @Test
     void insertNotebookSuccess() {
-        GenericDao userDao = new GenericDao(User.class);
         User user = (User) userDao.getById(1);
         Notebook newNotebook = new Notebook("October Events", user);
         user.addNotebook(newNotebook);
 
-        int id = genericDao.insert(newNotebook);
+        int id = notebookDao.insert(newNotebook);
 
         assertNotEquals(0,id);
-        Notebook insertedNotebook = (Notebook) genericDao.getById(id);
+        Notebook insertedNotebook = (Notebook) notebookDao.getById(id);
         logger.info(newNotebook);
         assertEquals("October Events", insertedNotebook.getTitle());
         assertNotNull(insertedNotebook.getUser());
@@ -69,8 +70,8 @@ class NotebookDaoTest {
      */
     @Test
     void deleteSuccess() {
-        genericDao.delete(genericDao.getById(3));
-        assertNull(genericDao.getById(3));
+        notebookDao.delete(notebookDao.getById(3));
+        assertNull(notebookDao.getById(3));
     }
 
     /**
@@ -78,7 +79,7 @@ class NotebookDaoTest {
      */
     @Test
     void getByIdSuccess() {
-        Notebook retrievedNotebook = (Notebook) genericDao.getById(3);
+        Notebook retrievedNotebook = (Notebook) notebookDao.getById(3);
         assertNotNull(retrievedNotebook);
         assertEquals("October Events", retrievedNotebook.getTitle());
     }
@@ -89,22 +90,24 @@ class NotebookDaoTest {
     @Test
     void saveOrUpdateSuccess() {
         String title = "October 2023";
-        Notebook notebookToUpdate = (Notebook) genericDao.getById(3);
+        Notebook notebookToUpdate = (Notebook) notebookDao.getById(3);
         notebookToUpdate.setTitle(title);
-        genericDao.saveOrUpdate(notebookToUpdate);
-        List<Notebook> retrievedNotebook = genericDao.getByPropertyEqual("title", title);
-        List<Notebook> notebook2 = genericDao.getByPropertyEqual("id", "3");
+        notebookDao.saveOrUpdate(notebookToUpdate);
+        List<Notebook> retrievedNotebook = notebookDao.getByPropertyEqual("title", title);
+        List<Notebook> notebook2 = notebookDao.getByPropertyEqual("id", "3");
         assertEquals(retrievedNotebook, notebook2);
         assertEquals(title, notebookToUpdate.getTitle());
         assertEquals(3, retrievedNotebook.get(0).getId());
     }
+
+
 
     /**
      * Verify successful get by property (equal match)
      */
     @Test
     void getByPropertyEqualSuccess() {
-        List<Notebook> notebooks = genericDao.getByPropertyEqual("title", "October Events");
+        List<Notebook> notebooks = notebookDao.getByPropertyEqual("title", "October Events");
         assertEquals(1, notebooks.size());
         assertEquals(3, notebooks.get(0).getId());
     }
@@ -114,8 +117,8 @@ class NotebookDaoTest {
      */
     @Test
     void getByPropertyLikeSuccess() {
-        List<Notebook> getNotebookByPropertyLike = genericDao.getByPropertyLike("title", "D");
-        List<Notebook> getNotebookByUserId = genericDao.getByPropertyEqual("title", "December Events");
+        List<Notebook> getNotebookByPropertyLike = notebookDao.getByPropertyLike("title", "D");
+        List<Notebook> getNotebookByUserId = notebookDao.getByPropertyEqual("title", "December Events");
         assertEquals(getNotebookByPropertyLike, getNotebookByUserId);
         assertEquals(1, getNotebookByPropertyLike.size());
     }

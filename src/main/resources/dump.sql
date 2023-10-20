@@ -22,7 +22,7 @@
 DROP TABLE IF EXISTS `notebook`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `notebook` (
+CREATE TABLE `EventTracker.notebook` (
                             `notebook_id` int NOT NULL AUTO_INCREMENT,
                             `title` varchar(100) DEFAULT NULL,
                             `user_user_id` int NOT NULL,
@@ -39,7 +39,7 @@ CREATE TABLE `notebook` (
 
 LOCK TABLES `notebook` WRITE;
 /*!40000 ALTER TABLE `notebook` DISABLE KEYS */;
-INSERT INTO `notebook` VALUES (1,'RIN Showcase',1),(2,'September Events',2),(3,'October Events',3),(4,'November Events',3),(5,'December Events',2),(6,'Events',1);
+INSERT INTO `EventTracker.notebook` VALUES (1,'RIN Showcase',1),(2,'September Events',2),(3,'October Events',3),(4,'November Events',3),(5,'December Events',2),(6,'Events',1);
 /*!40000 ALTER TABLE `notebook` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -50,7 +50,7 @@ UNLOCK TABLES;
 DROP TABLE IF EXISTS `user`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `user` (
+CREATE TABLE `EventTracker.user` (
                         `user_id` int NOT NULL AUTO_INCREMENT,
                         `first_name` varchar(255) DEFAULT NULL,
                         `last_name` varchar(255) DEFAULT NULL,
@@ -71,7 +71,7 @@ CREATE TABLE `user` (
 
 LOCK TABLES `user` WRITE;
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
-INSERT INTO `user` VALUES (1,'Joe','Coyne','jcoyne','jcoyne@email.com','supersecret1','1964-04-01','F'),(2,'Fred','Hensen','fhensen','fhensen@email.com','supersecret2','1988-05-08','M'),(3,'Barney','Curry','bcurry','bcurry@email.com','supersecret3','1947-11-11','NB'),(4,'Karen','Mack','kmack','kmack@email.com','supersecret4','1986-07-08','NS'),(5,'Dianne','Klein','dklein','dklein@email.com','supersecret5','1991-09-22','F'),(6,'Dawn','Tillman','dtillman','dtillman@email.com','supersecret6','1979-08-30','F'),(271,'Glynis','Fisher','gfisher','gcadagfisher@email.com','wahoo11','1992-08-11','F');
+INSERT INTO `EventTracker.user` VALUES (1,'Joe','Coyne','jcoyne','jcoyne@email.com','supersecret1','1964-04-01','F'),(2,'Fred','Hensen','fhensen','fhensen@email.com','supersecret2','1988-05-08','M'),(3,'Barney','Curry','bcurry','bcurry@email.com','supersecret3','1947-11-11','NB'),(4,'Karen','Mack','kmack','kmack@email.com','supersecret4','1986-07-08','NS'),(5,'Dianne','Klein','dklein','dklein@email.com','supersecret5','1991-09-22','F'),(6,'Dawn','Tillman','dtillman','dtillman@email.com','supersecret6','1979-08-30','F'),(271,'Glynis','Fisher','gfisher','gcadagfisher@email.com','wahoo11','1992-08-11','F');
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

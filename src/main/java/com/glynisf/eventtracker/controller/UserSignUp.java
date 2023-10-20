@@ -2,7 +2,6 @@ package com.glynisf.eventtracker.controller;
 
 import com.glynisf.eventtracker.entity.User;
 import com.glynisf.eventtracker.persistence.GenericDao;
-import com.glynisf.eventtracker.persistence.UserDao;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -14,10 +13,12 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.time.LocalDate;
+import java.util.List;
 
 @WebServlet(
         urlPatterns = {"/userSignUp"}
 )
+
 
 public class UserSignUp extends HttpServlet {
 
@@ -25,7 +26,6 @@ public class UserSignUp extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        UserDao dao = new UserDao();
         GenericDao gd = new GenericDao(User.class);
         String firstName = req.getParameter("first_name");
         String lastName = req.getParameter("last_name");
@@ -44,5 +44,7 @@ public class UserSignUp extends HttpServlet {
         RequestDispatcher dispatcher = req.getRequestDispatcher("/results.jsp");
         dispatcher.forward(req, resp);
     }
+
+    
 
     }

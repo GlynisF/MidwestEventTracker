@@ -1,7 +1,5 @@
 package com.glynisf.eventtracker.persistence;
 
-import com.glynisf.eventtracker.entity.Notebook;
-import com.glynisf.eventtracker.entity.User;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.hibernate.Session;
@@ -22,7 +20,9 @@ import java.util.List;
 public class GenericDao<T> {
     private Class<T> type;
     private final Logger logger = LogManager.getLogger(this.getClass());
-    SessionFactory sessionFactory = SessionFactoryProvider.getSessionFactory();    /**
+    SessionFactory sessionFactory = SessionFactoryProvider.getSessionFactory();
+
+    /**
      * Instantiates a new Generic dao.
      *
      * @param type the entity type, for example, User.

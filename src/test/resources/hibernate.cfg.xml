@@ -16,9 +16,12 @@
         <property name="hibernate.c3p0.timeout">1000</property>
         <property name="hibernate.c3p0.max_statements">100</property>
         <property name="hibernate.c3p0.idle_test_period">3000</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
 
         <mapping class="com.glynisf.eventtracker.entity.User"/>
         <mapping class="com.glynisf.eventtracker.entity.Notebook"/>
+
+
 
 
 
