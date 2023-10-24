@@ -9,7 +9,6 @@ import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
 
-import static com.mysql.cj.conf.PropertyKey.logger;
 import static javax.persistence.FetchType.EAGER;
 
 /**

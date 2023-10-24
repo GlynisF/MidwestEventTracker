@@ -3,10 +3,7 @@ package com.glynisf.eventtracker.entity;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
-import java.util.HashSet;
-import java.util.Iterator;
 import java.util.Objects;
-import java.util.Set;
 
 /**
  * The type Notebook.

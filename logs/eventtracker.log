@@ -1539,3 +1539,119 @@ com.mysql.cj.jdbc.exceptions.MySQLTransactionRollbackException: Lock wait timeou
 [INFO ] 2023-10-20 00:33:48.720 [main] UserDaoTest - com.glynisf.test.util.Database@2c9306d3
 [INFO ] 2023-10-20 00:33:48.762 [main] UserDaoTest - com.glynisf.test.util.Database@2c9306d3
 [INFO ] 2023-10-20 00:33:48.812 [main] UserDaoTest - com.glynisf.test.util.Database@2c9306d3
+[INFO ] 2023-10-24 15:09:22.467 [main] NotebookDaoTest - com.glynisf.test.util.Database@52354202
+[INFO ] 2023-10-24 15:09:22.658 [main] NotebookDaoTest - com.glynisf.test.util.Database@52354202
+[DEBUG] 2023-10-24 15:09:22.685 [main] GenericDao - Searching for notebook with title = October 2023
+[DEBUG] 2023-10-24 15:09:22.860 [main] GenericDao - Searching for notebook with id = 3
+[INFO ] 2023-10-24 15:09:22.904 [main] NotebookDaoTest - com.glynisf.test.util.Database@52354202
+[INFO ] 2023-10-24 15:09:22.947 [main] NotebookDaoTest - Notebook{id=84, title='October Events', user=User{password='supersecret1', firstName='Joe', lastName='Coyne', userName='jcoyne', dateOfBirth=1964-04-01, email='jcoyne@email.com', gender='F', id=1}}
+[INFO ] 2023-10-24 15:09:22.992 [main] NotebookDaoTest - com.glynisf.test.util.Database@52354202
+[DEBUG] 2023-10-24 15:09:22.992 [main] GenericDao - Searching for notebook with title = October Events
+[INFO ] 2023-10-24 15:09:23.036 [main] NotebookDaoTest - com.glynisf.test.util.Database@52354202
+[DEBUG] 2023-10-24 15:09:23.037 [main] GenericDao - Searching for user with title = D
+[DEBUG] 2023-10-24 15:09:23.049 [main] GenericDao - Searching for notebook with title = December Events
+[INFO ] 2023-10-24 15:09:23.081 [main] NotebookDaoTest - com.glynisf.test.util.Database@52354202
+[INFO ] 2023-10-24 15:09:23.113 [main] NotebookDaoTest - com.glynisf.test.util.Database@52354202
+[INFO ] 2023-10-24 15:09:23.162 [main] UserDaoTest - com.glynisf.test.util.Database@52354202
+[INFO ] 2023-10-24 15:09:23.215 [main] UserDaoTest - com.glynisf.test.util.Database@52354202
+[DEBUG] 2023-10-24 15:09:23.234 [main] GenericDao - Searching for notebook with id = 3
+[DEBUG] 2023-10-24 15:09:23.243 [main] GenericDao - Searching for notebook with firstName = chupi
+[INFO ] 2023-10-24 15:09:23.253 [main] UserDaoTest - [User{password='supersecret3', firstName='chupi', lastName='Curry', userName='bcurry', dateOfBirth=1947-11-11, email='bcurry@email.com', gender='NB', id=3}]
+[INFO ] 2023-10-24 15:09:23.253 [main] UserDaoTest - User{password='supersecret3', firstName='chupi', lastName='Curry', userName='bcurry', dateOfBirth=1947-11-11, email='bcurry@email.com', gender='NB', id=3}
+[INFO ] 2023-10-24 15:09:23.274 [main] UserDaoTest - com.glynisf.test.util.Database@52354202
+[DEBUG] 2023-10-24 15:09:23.274 [main] GenericDao - Searching for notebook with lastName = Curry
+[INFO ] 2023-10-24 15:09:23.317 [main] UserDaoTest - com.glynisf.test.util.Database@52354202
+[DEBUG] 2023-10-24 15:09:23.318 [main] GenericDao - Searching for user with lastName = c
+[INFO ] 2023-10-24 15:09:23.356 [main] UserDaoTest - com.glynisf.test.util.Database@52354202
+[INFO ] 2023-10-24 15:09:23.381 [main] UserDaoTest - com.glynisf.test.util.Database@52354202
+[DEBUG] 2023-10-24 15:09:23.382 [main] GenericDao - Searching for user with lastName = c
+[INFO ] 2023-10-24 15:09:23.414 [main] UserDaoTest - com.glynisf.test.util.Database@52354202
+[INFO ] 2023-10-24 15:09:23.448 [main] UserDaoTest - com.glynisf.test.util.Database@52354202
+[INFO ] 2023-10-24 15:09:23.494 [main] UserDaoTest - com.glynisf.test.util.Database@52354202
+[INFO ] 2023-10-24 15:25:36.448 [main] NotebookDaoTest - com.glynisf.test.util.Database@52354202
+[INFO ] 2023-10-24 15:25:36.613 [main] NotebookDaoTest - com.glynisf.test.util.Database@52354202
+[DEBUG] 2023-10-24 15:25:36.644 [main] GenericDao - Searching for notebook with title = October 2023
+[DEBUG] 2023-10-24 15:25:36.796 [main] GenericDao - Searching for notebook with id = 3
+[INFO ] 2023-10-24 15:25:36.841 [main] NotebookDaoTest - com.glynisf.test.util.Database@52354202
+[INFO ] 2023-10-24 15:25:36.874 [main] NotebookDaoTest - Notebook{id=86, title='October Events', user=User{password='supersecret1', firstName='Joe', lastName='Coyne', userName='jcoyne', dateOfBirth=1964-04-01, email='jcoyne@email.com', gender='F', id=1}}
+[INFO ] 2023-10-24 15:25:36.920 [main] NotebookDaoTest - com.glynisf.test.util.Database@52354202
+[DEBUG] 2023-10-24 15:25:36.920 [main] GenericDao - Searching for notebook with title = October Events
+[INFO ] 2023-10-24 15:25:36.958 [main] NotebookDaoTest - com.glynisf.test.util.Database@52354202
+[DEBUG] 2023-10-24 15:25:36.959 [main] GenericDao - Searching for user with title = D
+[DEBUG] 2023-10-24 15:25:36.971 [main] GenericDao - Searching for notebook with title = December Events
+[INFO ] 2023-10-24 15:25:37.001 [main] NotebookDaoTest - com.glynisf.test.util.Database@52354202
+[INFO ] 2023-10-24 15:25:37.031 [main] NotebookDaoTest - com.glynisf.test.util.Database@52354202
+[INFO ] 2023-10-24 15:25:37.079 [main] UserDaoTest - com.glynisf.test.util.Database@52354202
+[INFO ] 2023-10-24 15:25:37.124 [main] UserDaoTest - com.glynisf.test.util.Database@52354202
+[DEBUG] 2023-10-24 15:25:37.142 [main] GenericDao - Searching for notebook with id = 3
+[DEBUG] 2023-10-24 15:25:37.153 [main] GenericDao - Searching for notebook with firstName = chupi
+[INFO ] 2023-10-24 15:25:37.162 [main] UserDaoTest - [User{password='supersecret3', firstName='chupi', lastName='Curry', userName='bcurry', dateOfBirth=1947-11-11, email='bcurry@email.com', gender='NB', id=3}]
+[INFO ] 2023-10-24 15:25:37.162 [main] UserDaoTest - User{password='supersecret3', firstName='chupi', lastName='Curry', userName='bcurry', dateOfBirth=1947-11-11, email='bcurry@email.com', gender='NB', id=3}
+[INFO ] 2023-10-24 15:25:37.184 [main] UserDaoTest - com.glynisf.test.util.Database@52354202
+[DEBUG] 2023-10-24 15:25:37.184 [main] GenericDao - Searching for notebook with lastName = Curry
+[INFO ] 2023-10-24 15:25:37.218 [main] UserDaoTest - com.glynisf.test.util.Database@52354202
+[DEBUG] 2023-10-24 15:25:37.219 [main] GenericDao - Searching for user with lastName = c
+[INFO ] 2023-10-24 15:25:37.259 [main] UserDaoTest - com.glynisf.test.util.Database@52354202
+[INFO ] 2023-10-24 15:25:37.291 [main] UserDaoTest - com.glynisf.test.util.Database@52354202
+[DEBUG] 2023-10-24 15:25:37.291 [main] GenericDao - Searching for user with lastName = c
+[INFO ] 2023-10-24 15:25:37.336 [main] UserDaoTest - com.glynisf.test.util.Database@52354202
+[INFO ] 2023-10-24 15:25:37.382 [main] UserDaoTest - com.glynisf.test.util.Database@52354202
+[INFO ] 2023-10-24 15:25:37.429 [main] UserDaoTest - com.glynisf.test.util.Database@52354202
+[INFO ] 2023-10-24 15:31:38.057 [main] NotebookDaoTest - com.glynisf.test.util.Database@52354202
+[INFO ] 2023-10-24 15:31:38.239 [main] NotebookDaoTest - com.glynisf.test.util.Database@52354202
+[DEBUG] 2023-10-24 15:31:38.265 [main] GenericDao - Searching for notebook with title = October 2023
+[DEBUG] 2023-10-24 15:31:38.415 [main] GenericDao - Searching for notebook with id = 3
+[INFO ] 2023-10-24 15:31:38.465 [main] NotebookDaoTest - com.glynisf.test.util.Database@52354202
+[INFO ] 2023-10-24 15:31:38.494 [main] NotebookDaoTest - Notebook{id=88, title='October Events', user=User{password='supersecret1', firstName='Joe', lastName='Coyne', userName='jcoyne', dateOfBirth=1964-04-01, email='jcoyne@email.com', gender='F', id=1}}
+[INFO ] 2023-10-24 15:31:38.539 [main] NotebookDaoTest - com.glynisf.test.util.Database@52354202
+[DEBUG] 2023-10-24 15:31:38.541 [main] GenericDao - Searching for notebook with title = October Events
+[INFO ] 2023-10-24 15:31:38.577 [main] NotebookDaoTest - com.glynisf.test.util.Database@52354202
+[DEBUG] 2023-10-24 15:31:38.577 [main] GenericDao - Searching for user with title = D
+[DEBUG] 2023-10-24 15:31:38.591 [main] GenericDao - Searching for notebook with title = December Events
+[INFO ] 2023-10-24 15:31:38.626 [main] NotebookDaoTest - com.glynisf.test.util.Database@52354202
+[INFO ] 2023-10-24 15:31:38.655 [main] NotebookDaoTest - com.glynisf.test.util.Database@52354202
+[INFO ] 2023-10-24 15:31:38.720 [main] UserDaoTest - com.glynisf.test.util.Database@52354202
+[INFO ] 2023-10-24 15:31:38.771 [main] UserDaoTest - com.glynisf.test.util.Database@52354202
+[DEBUG] 2023-10-24 15:31:38.790 [main] GenericDao - Searching for notebook with id = 3
+[DEBUG] 2023-10-24 15:31:38.798 [main] GenericDao - Searching for notebook with firstName = chupi
+[INFO ] 2023-10-24 15:31:38.808 [main] UserDaoTest - [User{password='supersecret3', firstName='chupi', lastName='Curry', userName='bcurry', dateOfBirth=1947-11-11, email='bcurry@email.com', gender='NB', id=3}]
+[INFO ] 2023-10-24 15:31:38.808 [main] UserDaoTest - User{password='supersecret3', firstName='chupi', lastName='Curry', userName='bcurry', dateOfBirth=1947-11-11, email='bcurry@email.com', gender='NB', id=3}
+[INFO ] 2023-10-24 15:31:38.829 [main] UserDaoTest - com.glynisf.test.util.Database@52354202
+[DEBUG] 2023-10-24 15:31:38.829 [main] GenericDao - Searching for notebook with lastName = Curry
+[INFO ] 2023-10-24 15:31:38.863 [main] UserDaoTest - com.glynisf.test.util.Database@52354202
+[DEBUG] 2023-10-24 15:31:38.864 [main] GenericDao - Searching for user with lastName = c
+[INFO ] 2023-10-24 15:31:38.902 [main] UserDaoTest - com.glynisf.test.util.Database@52354202
+[INFO ] 2023-10-24 15:31:38.928 [main] UserDaoTest - com.glynisf.test.util.Database@52354202
+[DEBUG] 2023-10-24 15:31:38.929 [main] GenericDao - Searching for user with lastName = c
+[INFO ] 2023-10-24 15:31:38.960 [main] UserDaoTest - com.glynisf.test.util.Database@52354202
+[INFO ] 2023-10-24 15:31:38.998 [main] UserDaoTest - com.glynisf.test.util.Database@52354202
+[INFO ] 2023-10-24 15:31:39.049 [main] UserDaoTest - com.glynisf.test.util.Database@52354202
+[INFO ] 2023-10-24 15:38:45.327 [main] NotebookDaoTest - com.glynisf.test.util.Database@52354202
+[INFO ] 2023-10-24 15:38:45.508 [main] NotebookDaoTest - com.glynisf.test.util.Database@52354202
+[DEBUG] 2023-10-24 15:38:45.535 [main] GenericDao - Searching for notebook with title = October 2023
+[DEBUG] 2023-10-24 15:38:45.716 [main] GenericDao - Searching for notebook with id = 3
+[INFO ] 2023-10-24 15:38:45.778 [main] NotebookDaoTest - com.glynisf.test.util.Database@52354202
+[INFO ] 2023-10-24 15:38:45.831 [main] NotebookDaoTest - Notebook{id=90, title='October Events', user=User{password='supersecret1', firstName='Joe', lastName='Coyne', userName='jcoyne', dateOfBirth=1964-04-01, email='jcoyne@email.com', gender='F', id=1}}
+[INFO ] 2023-10-24 15:38:45.904 [main] NotebookDaoTest - com.glynisf.test.util.Database@52354202
+[DEBUG] 2023-10-24 15:38:45.905 [main] GenericDao - Searching for notebook with title = October Events
+[INFO ] 2023-10-24 15:38:45.965 [main] NotebookDaoTest - com.glynisf.test.util.Database@52354202
+[DEBUG] 2023-10-24 15:38:45.966 [main] GenericDao - Searching for user with title = D
+[DEBUG] 2023-10-24 15:38:45.991 [main] GenericDao - Searching for notebook with title = December Events
+[INFO ] 2023-10-24 15:38:46.043 [main] NotebookDaoTest - com.glynisf.test.util.Database@52354202
+[INFO ] 2023-10-24 15:38:46.090 [main] NotebookDaoTest - com.glynisf.test.util.Database@52354202
+[INFO ] 2023-10-24 15:38:46.167 [main] UserDaoTest - com.glynisf.test.util.Database@52354202
+[INFO ] 2023-10-24 15:38:46.246 [main] UserDaoTest - com.glynisf.test.util.Database@52354202
+[DEBUG] 2023-10-24 15:38:46.280 [main] GenericDao - Searching for notebook with id = 3
+[DEBUG] 2023-10-24 15:38:46.295 [main] GenericDao - Searching for notebook with firstName = chupi
+[INFO ] 2023-10-24 15:38:46.312 [main] UserDaoTest - [User{password='supersecret3', firstName='chupi', lastName='Curry', userName='bcurry', dateOfBirth=1947-11-11, email='bcurry@email.com', gender='NB', id=3}]
+[INFO ] 2023-10-24 15:38:46.312 [main] UserDaoTest - User{password='supersecret3', firstName='chupi', lastName='Curry', userName='bcurry', dateOfBirth=1947-11-11, email='bcurry@email.com', gender='NB', id=3}
+[INFO ] 2023-10-24 15:38:46.337 [main] UserDaoTest - com.glynisf.test.util.Database@52354202
+[DEBUG] 2023-10-24 15:38:46.337 [main] GenericDao - Searching for notebook with lastName = Curry
+[INFO ] 2023-10-24 15:38:46.374 [main] UserDaoTest - com.glynisf.test.util.Database@52354202
+[DEBUG] 2023-10-24 15:38:46.374 [main] GenericDao - Searching for user with lastName = c
+[INFO ] 2023-10-24 15:38:46.415 [main] UserDaoTest - com.glynisf.test.util.Database@52354202
+[INFO ] 2023-10-24 15:38:46.442 [main] UserDaoTest - com.glynisf.test.util.Database@52354202
+[DEBUG] 2023-10-24 15:38:46.444 [main] GenericDao - Searching for user with lastName = c
+[INFO ] 2023-10-24 15:38:46.487 [main] UserDaoTest - com.glynisf.test.util.Database@52354202
+[INFO ] 2023-10-24 15:38:46.528 [main] UserDaoTest - com.glynisf.test.util.Database@52354202
+[INFO ] 2023-10-24 15:38:46.574 [main] UserDaoTest - com.glynisf.test.util.Database@52354202
