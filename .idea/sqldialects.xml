@@ -3,5 +3,6 @@
   <component name="SqlDialectMappings">
     <file url="file://$PROJECT_DIR$/src/test/resources/cleandb.sql" dialect="MySQL" />
     <file url="file://$USER_HOME$/MySQL" dialect="GenericSQL" />
+    <file url="file://$USER_HOME$/eventtracker_localhost-2023_11_13_12_05_38-dump.sql" dialect="MySQL" />
   </component>
 </project>

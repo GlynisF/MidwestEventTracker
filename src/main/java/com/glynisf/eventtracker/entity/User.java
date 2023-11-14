@@ -3,6 +3,7 @@ package com.glynisf.eventtracker.entity;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
 import java.util.HashSet;
@@ -18,7 +19,7 @@ import static javax.persistence.FetchType.EAGER;
  */
 @Entity(name = "EventTracker")
 @Table(name = "user")
-public class User {
+public class User implements Serializable {
     private String password;
     //private int age;
 

@@ -18,7 +18,7 @@
 
 <div class="row">
 
-    <form action="userSignUp" method="GET" class="col-lg-9 gap-3 mx-auto justify-content-center">
+    <form action="searchUser" method="GET" class="col-lg-9 gap-3 mx-auto justify-content-center">
         <fieldset>
             <legend>User Details</legend>
             <div class="form-group">

@@ -15,10 +15,13 @@ public class Notebook {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
     @GenericGenerator(name="native", strategy="native")
-    @Column(name = "notebook_id")
+    @Column(name="notebook_id")
     private int id;
+
     private String title;
+
     @ManyToOne
+    @JoinColumn(name = "user_user_id")
     private User user;
 
     /**

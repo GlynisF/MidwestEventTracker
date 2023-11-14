@@ -107,9 +107,10 @@ class NotebookDaoTest {
      */
     @Test
     void getByPropertyEqualSuccess() {
-        List<Notebook> notebooks = notebookDao.getByPropertyEqual("title", "October Events");
-        assertEquals(1, notebooks.size());
-        assertEquals(3, notebooks.get(0).getId());
+        List<Notebook> notebooks = notebookDao.getByPropertyEqual("title", "Events");
+
+       assertTrue(notebooks.get(0).getTitle().equals("Events"));
+       assertTrue(notebooks.get(0).getId() == 6);
     }
 
     /**

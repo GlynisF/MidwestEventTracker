@@ -5,6 +5,9 @@ import org.hibernate.boot.Metadata;
 import org.hibernate.boot.MetadataSources;
 import org.hibernate.boot.registry.StandardServiceRegistry;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
+import org.hibernate.cfg.Configuration;
+
+import static org.hibernate.boot.model.process.spi.MetadataBuildingProcess.build;
 
 /**
  * This file provides a SessionFactory for use with DAOs using Hibernate
@@ -15,6 +18,7 @@ import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 public class SessionFactoryProvider {
 
     private static SessionFactory sessionFactory;
+    private static Configuration testDbConfig;
 
     /**
      * private constructor prevents instantiating this class anywhere else
@@ -30,7 +34,7 @@ public class SessionFactoryProvider {
 
 
         StandardServiceRegistry standardRegistry =
-                new StandardServiceRegistryBuilder().configure().build();
+                new StandardServiceRegistryBuilder().configure("/hibernate_testDb.cfg.xml").loadProperties("/hibernate_testDb.cfg.xml").build();
         Metadata metaData =
                 new MetadataSources(standardRegistry).getMetadataBuilder().build();
         sessionFactory = metaData.getSessionFactoryBuilder().build();

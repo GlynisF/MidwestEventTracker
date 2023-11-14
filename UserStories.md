@@ -14,7 +14,7 @@ As a registered user, I want to be able to view a list of all upcoming & past ev
 ### View Event Details __*__
 As a registered user, I want to be able to view all details about an event.
 
-### Edit Events __*__
+### Edit / Delete Events __*__
 As a registered user, I want to be able to edit or delete any events.
 
 ### Edit Event  __*__
@@ -25,7 +25,7 @@ As a registered user, I want to be able to add an event using a provided templat
 
 ### About __*__
 As a registered user, I want more information about the site-- admin contact info, year established, where to relay 
-questions.
+inquiries.
 
 ### View Profile
 As a registered user, I want to be able to view my profile.

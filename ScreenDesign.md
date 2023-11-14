@@ -15,9 +15,6 @@
 ## *Login Modal (after user sign up)*
 ![](/ScreenDesign/login_after_signup.png)
 
-## *Login (existing users)*
-![](/ScreenDesign/login.png)
-
 ## *Homepage*
 ![](/ScreenDesign/Homepage.png)
 
