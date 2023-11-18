@@ -3,6 +3,7 @@ package com.glynisf.eventtracker.entity;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.Objects;
 
 /**
@@ -10,7 +11,7 @@ import java.util.Objects;
  */
 @Entity(name = "Notebook")
 @Table(name = "notebook")
-public class Notebook {
+public class Notebook implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")

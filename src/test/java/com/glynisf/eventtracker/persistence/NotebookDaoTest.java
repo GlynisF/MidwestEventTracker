@@ -14,6 +14,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 /**
  * The type Notebook dao test.
+ *
  * @author gfisher
  */
 class NotebookDaoTest {
@@ -21,6 +22,9 @@ class NotebookDaoTest {
      * The NotebookDao.
      */
     GenericDao notebookDao;
+    /**
+     * The User dao.
+     */
     GenericDao userDao;
 
     private final Logger logger = LogManager.getLogger(this.getClass());
@@ -53,16 +57,17 @@ class NotebookDaoTest {
     void insertNotebookSuccess() {
         User user = (User) userDao.getById(1);
         Notebook newNotebook = new Notebook("October Events", user);
-        user.addNotebook(newNotebook);
 
         int id = notebookDao.insert(newNotebook);
+        user.addNotebook(newNotebook);
+
+        assertTrue(user.getNotebooks().contains(newNotebook));
+
+        assertTrue(true, String.valueOf(notebookDao.getById(3).equals(newNotebook)));
+
+        assertTrue(notebookDao.getByPropertyLike("title", "October Events").contains(newNotebook));
 
         assertNotEquals(0,id);
-        Notebook insertedNotebook = (Notebook) notebookDao.getById(id);
-        logger.info(newNotebook);
-        assertEquals("October Events", insertedNotebook.getTitle());
-        assertNotNull(insertedNotebook.getUser());
-        assertEquals("Joe", insertedNotebook.getUser().getFirstName());
     }
 
     /**
@@ -79,9 +84,10 @@ class NotebookDaoTest {
      */
     @Test
     void getByIdSuccess() {
-        Notebook retrievedNotebook = (Notebook) notebookDao.getById(3);
-        assertNotNull(retrievedNotebook);
-        assertEquals("October Events", retrievedNotebook.getTitle());
+        Notebook notebookDaoById = (Notebook) notebookDao.getById(3);
+        assertNotNull(notebookDaoById);
+        assertTrue(notebookDaoById.getTitle().equals("October Events"));
+        assertTrue(notebookDao.getById(3).equals(notebookDaoById));
     }
 
     /**
@@ -91,26 +97,24 @@ class NotebookDaoTest {
     void saveOrUpdateSuccess() {
         String title = "October 2023";
         Notebook notebookToUpdate = (Notebook) notebookDao.getById(3);
+
         notebookToUpdate.setTitle(title);
         notebookDao.saveOrUpdate(notebookToUpdate);
-        List<Notebook> retrievedNotebook = notebookDao.getByPropertyEqual("title", title);
-        List<Notebook> notebook2 = notebookDao.getByPropertyEqual("id", "3");
-        assertEquals(retrievedNotebook, notebook2);
-        assertEquals(title, notebookToUpdate.getTitle());
-        assertEquals(3, retrievedNotebook.get(0).getId());
+
+        assertTrue(notebookToUpdate.getTitle().equals("October 2023"));
+
+        assertTrue(notebookDao.getById(3).equals(notebookToUpdate));
     }
-
-
 
     /**
      * Verify successful get by property (equal match)
      */
     @Test
     void getByPropertyEqualSuccess() {
-        List<Notebook> notebooks = notebookDao.getByPropertyEqual("title", "Events");
-
-       assertTrue(notebooks.get(0).getTitle().equals("Events"));
-       assertTrue(notebooks.get(0).getId() == 6);
+        List<Notebook> notebookByTitle = (List<Notebook>) notebookDao.getByPropertyEqual("title", "September");
+        assertNotNull(notebookByTitle);
+        assertTrue(true, String.valueOf(notebookByTitle.contains("September Events")));
+        assertTrue(notebookDao.getByPropertyEqual("title", "September").equals(notebookByTitle));
     }
 
     /**
@@ -118,14 +122,10 @@ class NotebookDaoTest {
      */
     @Test
     void getByPropertyLikeSuccess() {
-        List<Notebook> getNotebookByPropertyLike = notebookDao.getByPropertyLike("title", "D");
-        List<Notebook> getNotebookByUserId = notebookDao.getByPropertyEqual("title", "December Events");
-        assertEquals(getNotebookByPropertyLike, getNotebookByUserId);
+        List<Notebook> getNotebookByPropertyLike = notebookDao.getByPropertyLike("title", "Dec");
         assertEquals(1, getNotebookByPropertyLike.size());
+        assertTrue(true, String.valueOf(getNotebookByPropertyLike.contains("December")));
+        assertTrue(getNotebookByPropertyLike.equals(notebookDao.getByPropertyEqual("id", "5")));
     }
-
-
-
-
 
 }

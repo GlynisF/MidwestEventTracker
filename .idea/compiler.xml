@@ -14,4 +14,9 @@
       <module name="mysql-connector-j" target="1.7" />
     </bytecodeTargetLevel>
   </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="MidwestEventTracker" options="--add-exports java.desktop/sun.awt=ALL-UNNAMED" />
+    </option>
+  </component>
 </project>
