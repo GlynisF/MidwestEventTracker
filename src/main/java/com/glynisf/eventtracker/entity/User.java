@@ -1,5 +1,6 @@
 package com.glynisf.eventtracker.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
@@ -11,6 +12,7 @@ import java.util.Objects;
 import java.util.Set;
 
 import static javax.persistence.FetchType.EAGER;
+import static javax.persistence.FetchType.LAZY;
 
 /**
  * Holds details to create a new User.
@@ -20,7 +22,8 @@ import static javax.persistence.FetchType.EAGER;
 @Entity(name = "EventTracker")
 @Table(name = "user")
 public class User implements Serializable {
-    private String password;
+
+	private String password;
     //private int age;
 
     @Column(name = "first_name")
@@ -42,6 +45,7 @@ public class User implements Serializable {
     private int id;
 
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = EAGER)
+    @JsonIgnore
     private Set<Notebook> notebooks = new HashSet<>();
 
     /**

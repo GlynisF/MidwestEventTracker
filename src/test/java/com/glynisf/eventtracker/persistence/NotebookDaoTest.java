@@ -56,7 +56,7 @@ class NotebookDaoTest {
     @Test
     void insertNotebookSuccess() {
         User user = (User) userDao.getById(1);
-        Notebook newNotebook = new Notebook("October Events", user);
+        Notebook newNotebook = new Notebook(0, "October Events", user);
 
         int id = notebookDao.insert(newNotebook);
         user.addNotebook(newNotebook);

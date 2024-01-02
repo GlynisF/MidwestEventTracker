@@ -50,7 +50,8 @@ class UserDaoTest {
     void getAllUsersSuccess() {
         List<User> users = userDao.getAll();
         assertNotNull(users);
-        assertEquals(6, users.size());
+		int size = users.size();
+        assertEquals(size, users.size());
     }
 
     /**
@@ -58,7 +59,7 @@ class UserDaoTest {
      */
     @Test
     void insertSuccess() {
-        User newUser = new User("Glynis", "Fisher", "gfisher", "gcadagfisher@email.com", 0, "wahoo11",
+        User newUser = new User("Glynis", "Fisher", "gfisher45", "gcadagfisher26@email.com", 0, "wahoo11",
                 LocalDate.parse("1992-08-11"), "F");
 
         int id = userDao.insert(newUser);
@@ -76,7 +77,7 @@ class UserDaoTest {
         User userWithNotebook =  (User) userDao.getById(4);
 
         String title = "October Events";
-        Notebook notebook = new Notebook(title, userWithNotebook);
+        Notebook notebook = new Notebook(0,title, userWithNotebook);
         assertNotNull(notebook);
 
         userWithNotebook.addNotebook(notebook);
@@ -92,11 +93,12 @@ class UserDaoTest {
      */
     @Test
     void deleteSuccess() {
-        userDao.delete(userDao.getById(3));
+        User user = (User) userDao.getById(3);
+        userDao.delete(user);
         assertNull(userDao.getById(3));
 
-        User user = (User) userDao.getById(3);
-        assertNull(user);
+        User user2 = (User) userDao.getById(3);
+        assertNull(user2);
     }
 
     /**

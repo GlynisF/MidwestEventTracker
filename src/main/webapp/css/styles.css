@@ -62,6 +62,11 @@ div .index_bg {
     background-color: #4c6e4d;
 }
 
+#autocompleteForm input .form-control {
+    background-color: gainsboro;
+    border: 1px solid #101010;
+    border-radius: 3px;
+}
 
 /* Media Query for devices withi coarse pointers and no hover functionality */
 

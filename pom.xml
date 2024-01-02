@@ -4,10 +4,12 @@
   <groupId>org.glynisf</groupId>
   <artifactId>MidwestEventTracker</artifactId>
   <packaging>war</packaging>
-  <version>1.0-SNAPSHOT</version>
+    <version>1.0-SNAPSHOT</version>
   <name>MidwestEventTracker Maven Webapp</name>
   <url>http://maven.apache.org</url>
+
   <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <hibernate-version>5.4.24.Final</hibernate-version>
     <javax.version>7.0</javax.version>
     <jstl-version>1.2</jstl-version>
@@ -25,65 +27,93 @@
     <jackson-version>2.10.0</jackson-version>
     <database.properties>src/main/resources/database.properties</database.properties>
   </properties>
+
   <dependencies>
-    <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
+
+      <dependency>
+          <groupId>com.itfsw</groupId>
+          <artifactId>QueryBuilder</artifactId>
+          <version>1.0.4</version>
+      </dependency>
+
+      <!-- https://mvnrepository.com/artifact/com.google.maps/google-maps-services -->
+      <dependency>
+          <groupId>com.google.maps</groupId>
+          <artifactId>google-maps-services</artifactId>
+          <version>2.2.0</version>
+      </dependency>
+
+      <!-- hibernate dependencies -->
     <dependency>
-      <groupId>org.hibernate</groupId>
+        <groupId>org.hibernate</groupId>
       <artifactId>hibernate-core</artifactId>
       <version>${hibernate-version}</version>
     </dependency>
-    <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-c3p0 -->
+
     <dependency>
       <groupId>org.hibernate</groupId>
       <artifactId>hibernate-c3p0</artifactId>
       <version>${hibernate-version}</version>
     </dependency>
-    <!-- next 2 dependencies are for log4j -->
+
+  <!--log4j -->
     <dependency>
       <groupId>org.apache.logging.log4j</groupId>
       <artifactId>log4j-api</artifactId>
       <version>${log4j-version}</version>
     </dependency>
+
     <dependency>
       <groupId>org.apache.logging.log4j</groupId>
       <artifactId>log4j-core</artifactId>
       <version>${log4j-version}</version>
     </dependency>
+
+  <!-- javax -->
     <dependency>
       <groupId>javax</groupId>
       <artifactId>javaee-web-api</artifactId>
       <version>${javax.version}</version>
     </dependency>
+
+  <!-- junit dependencies -->
     <dependency>
       <groupId>org.junit.platform</groupId>
       <artifactId>junit-platform-runner</artifactId>
       <version>${junit-platform-runner-version}</version>
       <scope>test</scope>
     </dependency>
+
     <dependency>
       <groupId>org.junit.vintage</groupId>
       <artifactId>junit-vintage-engine</artifactId>
       <version>${junit-vintage-version}</version>
       <scope>test</scope>
     </dependency>
+
     <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-engine</artifactId>
       <version>${jupiter-version}</version>
       <scope>test</scope>
     </dependency>
+
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>${junit.version}</version>
       <scope>test</scope>
     </dependency>
+  <!-- end junit dependencies -->
+
+    <!-- jstl -->
     <dependency>
       <groupId>jstl</groupId>
       <artifactId>jstl</artifactId>
       <version>${jstl-version}</version>
     </dependency>
-    <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+
+  <!-- mysql -->
     <dependency>
       <groupId>mysql</groupId>
       <artifactId>mysql-connector-java</artifactId>
@@ -96,44 +126,63 @@
       <version>${mysql-version}</version>
     </dependency>
 
+  <!-- lombok -->
     <dependency>
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
       <version>${lombok-version}</version>
       <scope>provided</scope>
     </dependency>
+
+  <!-- start glassfish / jersey dependencies -->
     <dependency>
       <groupId>org.glassfish.jersey.containers</groupId>
       <artifactId>jersey-container-servlet</artifactId>
       <version>${jersey-version}</version>
     </dependency>
+
     <dependency>
       <groupId>org.glassfish.jersey.core</groupId>
       <artifactId>jersey-client</artifactId>
       <version>${jersey-version}</version>
     </dependency>
+
     <dependency>
       <groupId>org.glassfish.jersey.inject</groupId>
       <artifactId>jersey-hk2</artifactId>
       <version>${jersey-version}</version>
     </dependency>
+
+  <!-- add jackson as json provider -->
+    <dependency>
+      <groupId>org.glassfish.jersey.media</groupId>
+      <artifactId>jersey-media-json-jackson</artifactId>
+      <version>${jersey-version}</version>
+    </dependency>
+
+  <!-- end glassfish / jersey dependencies -->
+
+  <!-- com / auth dependencies-->
     <dependency>
       <groupId>com.auth0</groupId>
       <artifactId>java-jwt</artifactId>
       <version>3.4.1</version>
     </dependency>
+
     <dependency>
       <groupId>org.json</groupId>
       <artifactId>json</artifactId>
       <version>20230227</version>
     </dependency>
+
     <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
     <dependency>
       <groupId>commons-io</groupId>
       <artifactId>commons-io</artifactId>
       <version>2.11.0</version>
     </dependency>
-    <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core -->
+
+    <!-- jackson dependencies -->
     <dependency>
       <groupId>com.fasterxml.jackson.core</groupId>
       <artifactId>jackson-core</artifactId>
@@ -146,7 +195,6 @@
       <version>${jackson-version}</version>
     </dependency>
 
-    <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
 
     <dependency>
       <groupId>com.fasterxml.jackson.core</groupId>
@@ -154,14 +202,93 @@
       <version>${jackson-version}</version>
     </dependency>
 
+
+    <dependency>
+      <groupId>com.google.api</groupId>
+      <artifactId>api-common</artifactId>
+      <version>2.20.0</version>
+    </dependency>
+
+    <dependency>
+        <groupId>com.google.api-client</groupId>
+        <artifactId>google-api-client</artifactId>
+        <version>2.0.0</version>
+      </dependency>
+
+
+    <dependency>
+      <groupId>com.google.api-client</groupId>
+      <artifactId>google-api-client-servlet</artifactId>
+      <version>2.0.0</version>
+    </dependency>
+
+  <!-- end google dependencies -->
+
+
+      <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-simple -->
+      <dependency>
+          <groupId>org.slf4j</groupId>
+          <artifactId>slf4j-simple</artifactId>
+          <version>2.0.9</version>
+          <scope>test</scope>
+      </dependency>
+
+      <!-- jquery -->
+    <dependency>
+      <groupId>org.webjars</groupId>
+      <artifactId>jquery</artifactId>
+      <version>3.7.1</version>
+    </dependency>
+
+
+      <!-- JSON form -->
+      <dependency>
+          <groupId>com.networknt</groupId>
+          <artifactId>json-schema-validator</artifactId>
+          <version>1.0.87</version>
+          <!-- Only required for versions < 1.0.82. See README.md -->
+          <exclusions>
+              <exclusion>
+                  <groupId>org.apache.commons</groupId>
+                  <artifactId>commons-lang3</artifactId>
+              </exclusion>
+          </exclusions>
+      </dependency>
+
+
+      <!-- https://mvnrepository.com/artifact/javax.jms/javax.jms-api -->
+      <dependency>
+          <groupId>javax.jms</groupId>
+          <artifactId>javax.jms-api</artifactId>
+          <version>2.0.1</version>
+      </dependency>
+
+      <dependency>
+          <groupId>org.apache.cxf</groupId>
+          <artifactId>cxf-rt-frontend-jaxrs</artifactId>
+          <version>3.4.10</version>
+      </dependency>
+      <dependency>
+          <groupId>org.apache.activemq</groupId>
+          <artifactId>activemq-client</artifactId>
+          <version>5.16.6</version>
+      </dependency>
+      <dependency>
+          <groupId>com.amazonaws.secretsmanager</groupId>
+          <artifactId>aws-secretsmanager-jdbc</artifactId>
+          <version>1.0.12</version>
+      </dependency>
+
   </dependencies>
+  <!-- end dependencies-->
 
-
-
+  <!-- build start -->
   <build>
     <finalName>MidwestEventTracker</finalName>
     <pluginManagement>
+      <!-- plugin management start -->
       <plugins>
+        <!-- plugins start -->
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-compiler-plugin</artifactId>
@@ -181,6 +308,7 @@
         <plugin>
         <artifactId>maven-war-plugin</artifactId>
         <configuration>
+          <!-- web resources -->
           <webResources>
             <resource>
               <directory>src/main/.platform</directory>
@@ -193,6 +321,7 @@
               <filtering>true</filtering>
             </resource>
           </webResources>
+          <!-- config -->
         </configuration>
       </plugin>
       <plugin>
@@ -202,8 +331,9 @@
       <plugin>
         <artifactId>maven-deploy-plugin</artifactId>
         <version>2.8.2</version>
+        <!-- end plugins -->
       </plugin>
-        
+        <!-- end plugin management -->
       </plugins>
     </pluginManagement>
   </build>

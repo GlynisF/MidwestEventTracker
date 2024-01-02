@@ -7,7 +7,8 @@
 --%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
+<!doctype html>
+<html lang="en">
 <div class="container">
     <%@include file="includes/head.jsp" %>
     <%@include file="includes/nav.jsp" %>
@@ -28,16 +29,16 @@
                 </tr>
                 </thead>
                 <c:forEach var="user" items="${users}">
-                    <td>
+                    <tr>
                         <td>${user.firstName}</td>
                         <td>${user.lastName}</td>
                         <td>${user.userName}</td>
                         <td>${user.email}</td>
                         <td>
-                        <c:forEach var="notebook" items="${user.notebooks}">
-                        ${notebook.id} ${notebook}
-                        </c:forEach>
-                    </td>
+                            <c:forEach var="notebook" items="${user.notebooks}">
+                                ${notebook.id} ${notebook}
+                            </c:forEach>
+                        </td>
                     </tr>
                 </c:forEach>
             </table>

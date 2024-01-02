@@ -19,6 +19,8 @@
 
         <mapping class="com.glynisf.eventtracker.entity.User"/>
         <mapping class="com.glynisf.eventtracker.entity.Notebook"/>
+        <mapping class="com.glynisf.eventtracker.entity.Event"/>
+        <mapping class="com.glynisf.eventtracker.entity.Location"/>
 
 
     </session-factory>

@@ -10,6 +10,7 @@ import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Expression;
 import javax.persistence.criteria.Root;
+import java.io.Serializable;
 import java.util.List;
 
 /**
@@ -17,7 +18,7 @@ import java.util.List;
  *
  */
 
-public class GenericDao<T> {
+public class GenericDao<T, ID extends Serializable> {
     private Class<T> type;
     private final Logger logger = LogManager.getLogger(this.getClass());
     SessionFactory sessionFactory = SessionFactoryProvider.getSessionFactory();
@@ -37,12 +38,14 @@ public class GenericDao<T> {
      * @param id entity id to search by
      * @return a entity
      */
-    public <T> T getById(int id) {
+    public <T> T getById(ID id) {
         Session session = getSession();
         T entity = (T) session.get(type, id);
         session.close();
         return entity;
     }
+
+
 
     /**
      * Deletes the entity.
@@ -141,10 +144,26 @@ public class GenericDao<T> {
 
         query.where(builder.like(propertyPath, "%" + value + "%"));
 
-        List<T> entities = session.createQuery( query ).getResultList();
+        List<T> entities = session.createQuery(query).getResultList();
         session.close();
         return entities;
     }
+
+	public T getByIdDescending() {
+		Session session = sessionFactory.openSession();
+		CriteriaBuilder criteriaBuilder = session.getCriteriaBuilder();
+		CriteriaQuery<T> criteriaQuery = criteriaBuilder.createQuery(type);
+		Root<T> root = criteriaQuery.from(type);
+
+		// Add order by in descending order
+		criteriaQuery.orderBy(criteriaBuilder.desc(root.get("id")));
+
+		// Execute the query
+		T entity = session.createQuery(criteriaQuery).setMaxResults(1).uniqueResult();
+
+		session.close();
+		return entity;
+	}
 
 
     /**

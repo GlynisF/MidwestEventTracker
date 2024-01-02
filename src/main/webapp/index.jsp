@@ -1,12 +1,7 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: GCADAGFISHER
-  Date: 10/11/2023
-  Time: 10:14 PM
-  To change this template use File | Settings | File Templates.
---%>
+<%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
+<!doctype html>
+<html lang="en">
 <%@include file="includes/head.jsp" %>
 <div class="container mt-5">
     <body class="row mx-auto mt-5">
@@ -31,6 +26,12 @@
         </div>
 
     </header>
+    <html>
+    <body>
+    <!-- Other content -->
+    </body>
+    </html>
+
 
     <%@include file="includes/script.js" %>
 
