@@ -2,30 +2,21 @@ package com.glynisf.eventtracker.controller;
 
 import com.glynisf.eventtracker.entity.PlacesSearchDao;
 import com.glynisf.eventtracker.util.PropertiesLoader;
-
-
 import com.google.maps.PlaceAutocompleteRequest;
-
-
 import com.googleapis.maps.places.AddressComponent;
 import com.googleapis.maps.places.AddressComponentsItem;
-
 import com.googleapis.maps.places.Places;
-
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.core.Logger;
 
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.WebTarget;
-
 import java.io.IOException;
-
 import java.util.*;
 
 
-public class PlacesDao implements PropertiesLoader, MapObject {
+public class PlacesDao implements PropertiesLoader {
 
 	final Logger logger = (Logger) LogManager.getLogger(this.getClass());
 	private final Properties properties;

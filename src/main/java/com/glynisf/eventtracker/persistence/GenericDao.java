@@ -45,8 +45,6 @@ public class GenericDao<T, ID extends Serializable> {
         return entity;
     }
 
-
-
     /**
      * Deletes the entity.
      *
@@ -63,7 +61,7 @@ public class GenericDao<T, ID extends Serializable> {
     /**
      * update Notebook
      *
-     * @param Notebook Notebook to be inserted or updated
+     * @param entity Notebook to be inserted or updated
      */
     public void saveOrUpdate(T entity) {
         Session session = sessionFactory.openSession();
@@ -109,7 +107,7 @@ public class GenericDao<T, ID extends Serializable> {
      * @param value        value of the property to search for
      * @return list of orders meeting the criteria search
      */
-    public List<T> getByPropertyEqual(String propertyName, String value) {
+    public List<T> getByPropertyEqual(String propertyName, Object value) {
         Session session = getSession();
 
         logger.debug("Searching for notebook with " + propertyName + " = " + value);
@@ -132,7 +130,7 @@ public class GenericDao<T, ID extends Serializable> {
      * @param value value of the property to search for
      * @return list of users meeting the criteria search
      */
-    public List<T> getByPropertyLike(String propertyName, String value) {
+    public List<T> getByPropertyLike(String propertyName, Object value) {
         Session session = sessionFactory.openSession();
 
         logger.debug("Searching for user with {} = {}",  propertyName, value);
@@ -148,6 +146,28 @@ public class GenericDao<T, ID extends Serializable> {
         session.close();
         return entities;
     }
+
+
+	public List<T> getByPropertiesLike(String propertyName1, String value1, String propertyName2, String value2) {
+		Session session = sessionFactory.openSession();
+
+		logger.debug("Searching for entities with {} = {} and {} = {}", propertyName1, value1, propertyName2, value2);
+
+		CriteriaBuilder builder = session.getCriteriaBuilder();
+		CriteriaQuery<T> query = builder.createQuery(type);
+		Root<T> root = query.from(type);
+		Expression<String> propertyPath1 = root.get(propertyName1);
+		Expression<String> propertyPath2 = root.get(propertyName2);
+
+		query.where(
+				builder.like(propertyPath1, "%" + value1 + "%"),
+				builder.like(propertyPath2, "%" + value2 + "%")
+		);
+
+		List<T> entities = session.createQuery(query).getResultList();
+		session.close();
+		return entities;
+	}
 
 	public T getByIdDescending() {
 		Session session = sessionFactory.openSession();

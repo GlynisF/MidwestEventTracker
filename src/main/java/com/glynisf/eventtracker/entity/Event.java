@@ -5,7 +5,6 @@ import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.time.LocalDate;
 import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
@@ -28,9 +27,17 @@ public class Event implements Serializable {
 		    foreignKey = @ForeignKey(name = "notebook_id") )
     private Notebook notebook;
 
-    @OneToMany(mappedBy = "event", cascade = CascadeType.ALL,  orphanRemoval = false, fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "event", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @JsonIgnore
     private Set<Location> locations = new HashSet<Location>();
+
+	@OneToMany(mappedBy = "event", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+	@JsonIgnore
+	private Set<EventDetails> eventDetails;
+
+	@OneToMany(mappedBy = "event", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+	@JsonIgnore
+	private Set<Artist> artists;
 
     public Event() {
 
@@ -74,7 +81,43 @@ public class Event implements Serializable {
         this.locations = locations;
     }
 
-    public void addLocation(Location location) {
+	public Set<EventDetails> getEventDetails() {
+		return eventDetails;
+	}
+
+	public void setEventDetails(Set<EventDetails> eventDetails) {
+		this.eventDetails = eventDetails;
+	}
+
+	public Set<Artist> getArtists() {
+		return artists;
+	}
+
+	public void setArtists(Set<Artist> artists) {
+		this.artists = artists;
+	}
+
+	public void addArtist(Artist artist) {
+		artists.add(artist);
+		artist.setEvent(this);
+	}
+
+	public void removeArtist(Artist artist) {
+		artists.remove(artist);
+		artist.setEvent(null);
+	}
+
+	public void addEventDetails(EventDetails details) {
+		eventDetails.add(details);
+		details.setEvent(this);
+	}
+
+	public void removeEventDetails(EventDetails details) {
+		eventDetails.remove(details);
+		details.setEvent(null);
+	}
+
+	public void addLocation(Location location) {
         locations.add(location);
         location.setEvent(this);
     }
@@ -82,7 +125,7 @@ public class Event implements Serializable {
     /**
      * Instantiates a new Remove notebook.
      *
-     * @param notebook the notebook
+     * @param location the notebook
      */
     public void removeLocation(Location location) {
         locations.remove(location);
@@ -102,12 +145,13 @@ public class Event implements Serializable {
         return Objects.hash(id, eventName, notebook);
     }
 
-    @Override
-    public String toString() {
-        return "Event{" +
-                "id=" + id +
-                ", eventName='" + eventName + '\'' +
-                ", notebook=" + notebook +
-                '}';
-    }
+	@Override
+	public String toString() {
+		return "Event{" +
+				"id=" + id +
+				", eventName='" + eventName + '\'' +
+				", location=" + locations +
+				", eventDetails=" + eventDetails +
+				'}';
+	}
 }

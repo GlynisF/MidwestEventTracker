@@ -4,8 +4,6 @@ import com.glynisf.eventtracker.entity.PlacesSearchDao;
 import com.google.maps.model.AutocompletePrediction;
 import lombok.SneakyThrows;
 
-
-import java.util.List;
 import java.util.concurrent.Callable;
 
 public class AutocompleteCallable implements Callable<AutocompletePrediction[]> {

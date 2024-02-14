@@ -1,7 +1,9 @@
 package com.glynisf.auth;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class CognitoIdToken{
 
 	@JsonProperty("at_hash")
@@ -36,6 +38,24 @@ public class CognitoIdToken{
 
 	@JsonProperty("jti")
 	private String jti;
+
+	@JsonProperty("email")
+	private String email;
+
+	@JsonProperty("birthdate")
+	private String birthdate;
+
+	@JsonProperty("gender")
+	private String gender;
+
+	@JsonProperty("given_name")
+	private String givenName;
+
+	@JsonProperty("family_name")
+	private String familyName;
+
+	@JsonProperty("password")
+	private String password;
 
 	public String getAtHash(){
 		return atHash;
@@ -79,5 +99,30 @@ public class CognitoIdToken{
 
 	public String getJti(){
 		return jti;
+	}
+
+
+	public String getEmail() {
+		return email;
+	}
+
+	public String getBirthdate() {
+		return birthdate;
+	}
+
+	public String getGender() {
+		return gender;
+	}
+
+	public String getGivenName() {
+		return givenName;
+	}
+
+	public String getFamilyName() {
+		return familyName;
+	}
+
+	public String getPassword() {
+		return password;
 	}
 }

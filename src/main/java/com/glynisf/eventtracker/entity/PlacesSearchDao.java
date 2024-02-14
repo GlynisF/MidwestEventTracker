@@ -1,22 +1,21 @@
 package com.glynisf.eventtracker.entity;
 
-import com.glynisf.eventtracker.controller.MapObject;
 import com.glynisf.eventtracker.util.PropertiesLoader;
 import com.google.maps.GeoApiContext;
 import com.google.maps.PlaceAutocompleteRequest;
 import com.google.maps.PlacesApi;
 import com.google.maps.errors.ApiException;
-import com.google.maps.model.*;
-
+import com.google.maps.model.AutocompletePrediction;
+import com.google.maps.model.ComponentFilter;
+import com.google.maps.model.PlaceAutocompleteType;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.core.Logger;
-
 
 import java.io.IOException;
 import java.util.*;
 
 
-public class PlacesSearchDao implements PropertiesLoader, MapObject {
+public class PlacesSearchDao implements PropertiesLoader {
 
 	private final Logger logger = (Logger) LogManager.getLogger(this.getClass());
 	private Properties properties;

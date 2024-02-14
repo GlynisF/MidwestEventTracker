@@ -40,7 +40,7 @@ public class LocationDaoTest {
     void getAllLocationSuccess() {
         List<Location> locations = locationDao.getAll();
         assertNotNull(locations);
-        assertEquals(7, locations.size());
+        assertEquals(21, locations.size());
     }
 
     @Test

@@ -20,7 +20,7 @@ import java.util.Properties;
  *
  */
 public class LogIn extends HttpServlet implements PropertiesLoader {
-    Properties properties;
+    private Properties properties;
     private final Logger logger = LogManager.getLogger(this.getClass());
     public static String CLIENT_ID;
     public static String LOGIN_URL;
@@ -41,7 +41,7 @@ public class LogIn extends HttpServlet implements PropertiesLoader {
     // 4 to do this work a single time and put the properties in the application scope
     private void loadProperties() {
         try {
-            properties = loadProperties("/cognito.properties");
+	        properties = (Properties) getServletContext().getAttribute("cognitoProperties");
             CLIENT_ID = properties.getProperty("client.id");
             LOGIN_URL = properties.getProperty("loginURL");
             REDIRECT_URL = properties.getProperty("redirectURL");
@@ -59,11 +59,13 @@ public class LogIn extends HttpServlet implements PropertiesLoader {
      * @throws IOException
      */
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        // TODO if properties weren't loaded properly, route to an error page
-	    req.setAttribute("password", req.getParameter("password"));
-		req.setAttribute("username", req.getParameter("username"));
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         String url = LOGIN_URL + "?response_type=code&client_id=" + CLIENT_ID + "&redirect_uri=" + REDIRECT_URL;
-        resp.sendRedirect(url);
+		if(properties != null) {
+			resp.sendRedirect(url);
+		} else {
+			req.setAttribute("message", "There was an error logging in.");
+			resp.sendRedirect("error.jsp");
+		}
     }
 }

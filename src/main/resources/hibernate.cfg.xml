@@ -1,11 +1,11 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE hibernate-configuration PUBLIC
         "-//Hibernate/Hibernate Configuration DTD//EN"
         "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
 <!--suppress HibernateConfigDomFacetInspection -->
 <hibernate-configuration>
     <session-factory>
-        <property name="hibernate.connection.url">jdbc:mysql://awseb-e-fev537ueq6-stack-awsebrdsdatabase-clbu9moqjfni.czsgd5vqo4ab.us-east-2.rds.amazonaws.com:3306/eventtracker</property>
+        <property name="hibernate.connection.url">jdbc:mysql://awseb-e-cimx28xpi2-stack-awsebrdsdatabase-egvchjg7ataw.czsgd5vqo4ab.us-east-2.rds.amazonaws.com:3306/eventtracker</property>
         <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
 
         <property name="hibernate.connection.username">student</property>
@@ -20,10 +20,14 @@
         <property name="hibernate.use_sql_comments">true</property>
         <property name="hibernate.format_sql">true</property>
         <property name="hibernate.highlight_sql">true</property>
-        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.show_sql">false</property>
 
         <mapping class="com.glynisf.eventtracker.entity.User"/>
         <mapping class="com.glynisf.eventtracker.entity.Notebook"/>
+        <mapping class="com.glynisf.eventtracker.entity.Event"/>
+        <mapping class="com.glynisf.eventtracker.entity.Location"/>
+        <mapping class="com.glynisf.eventtracker.entity.EventDetails"/>
+        <mapping class="com.glynisf.eventtracker.entity.Artist"/>
 
 
 

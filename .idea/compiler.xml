@@ -10,9 +10,6 @@
         <module name="MidwestEventTracker" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="mysql-connector-j" target="1.7" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">

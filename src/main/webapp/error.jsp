@@ -9,7 +9,7 @@
 <html>
 <head>
     <title>Failed Login</title>
-    <p>An error occurred getting or validating token.</p>
+    <p>Error: <%= request.getAttribute("message") %></p>
 </head>
 <body>
 

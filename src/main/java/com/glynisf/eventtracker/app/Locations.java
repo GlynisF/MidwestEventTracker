@@ -5,13 +5,24 @@ import com.glynisf.eventtracker.entity.Event;
 import com.glynisf.eventtracker.entity.Location;
 import com.glynisf.eventtracker.entity.User;
 import com.glynisf.eventtracker.persistence.GenericDao;
+import lombok.SneakyThrows;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.MultivaluedMap;
 import javax.ws.rs.core.Response;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
-@Path("/location")
+@Path("/locations")
 public class Locations {
+	private final ExecutorService executorService = Executors.newFixedThreadPool(15);
+
 
 	private GenericDao locationDao;
 	private GenericDao eventDao;
@@ -25,34 +36,64 @@ public class Locations {
 		userDao = new GenericDao(User.class);
 	}
 
-	@GET
-	@Path("/{id}")
-	public Event getEvent(@PathParam("id") String id) {
-		Event event = (Event) eventDao.getById(id);
-		return event;
-	}
-
-
-
+	@SneakyThrows
 	@POST
-	@Consumes(MediaType.APPLICATION_FORM_URLENCODED)
+	@Consumes(MediaType.APPLICATION_JSON)
 	@Produces(MediaType.APPLICATION_JSON)
-	public Response addLocation(@FormParam("name") String name,
-	                            @FormParam("phone_number") String phoneNumber,
-	                            @FormParam("address") String address,
-	                            @FormParam("apartment") String apartment,
-	                            @FormParam("city") String city,
-	                            @FormParam("state") String state,
-	                            @FormParam("zip") String zip,
-	                            @FormParam("website") String website,
-	                            @FormParam("wheelchair_accessible_entrance") boolean wheelchairAccessibleEntrance,
-	                            @FormParam("place_id") String placeId) {
-
-		System.out.println(address);
+	public Response addLocation(Location location) {
+		String name = location.getName();
+		String phoneNumber = location.getPhoneNumber();
+		String address = location.getAddress();
+		String apartment = location.getApartment();
+		String city = location.getCity();
+		String state = location.getState();
+		String zip = location.getZip();
+		Boolean wheelchairAccessibleEntrance = location.isWheelchairAccessibleEntrance();
+		String placeId = location.getPlaceId();
+		String website = location.getWebsite();
 
 		Event event = (Event) eventDao.getById(4);
-		Location location = new Location(name, phoneNumber, address, apartment, city, state, zip, wheelchairAccessibleEntrance, website, event , placeId);
-		int id = locationDao.insert(event);
+		location = new Location(name, phoneNumber, address, apartment, city, state, zip, wheelchairAccessibleEntrance, website, event , placeId);
+
+		int id = locationDao.insert(location);
+		event.addLocation(location);
+
+		List<Location> locationList = new ArrayList<>();
+		locationList.add(location);
+
 		return Response.ok(location).build();
+	}
+
+	@PUT
+	@Consumes(MediaType.APPLICATION_JSON)
+	@Produces(MediaType.APPLICATION_JSON)
+	@Path("/{locationId}")
+	public CompletableFuture<Response> updateDetailsAsync(
+			@PathParam("locationId") int id,
+			Location updatedLocation) {
+
+		return CompletableFuture.supplyAsync(() -> {
+			try {
+				Location location = (Location) locationDao.getById(id);
+				location.setName(updatedLocation.getName());
+				location.setPhoneNumber(updatedLocation.getPhoneNumber());
+				location.setAddress(updatedLocation.getAddress());
+				location.setApartment(updatedLocation.getApartment());
+				location.setCity(updatedLocation.getCity());
+				location.setState(updatedLocation.getState());
+				location.setZip(updatedLocation.getZip());
+				location.setWebsite(updatedLocation.getWebsite());
+				location.setWheelchairAccessibleEntrance(Boolean.valueOf((updatedLocation.isWheelchairAccessibleEntrance())));
+				locationDao.saveOrUpdate(location);
+
+				String locationJson = objectMapper.writeValueAsString(location);
+				System.out.println(location);
+
+				return Response.ok(locationJson).build();
+			} catch (Exception e) {
+				// Handle exceptions if needed
+				return Response.serverError().entity(e.getMessage()).build();
+			}
+		}, executorService);
 	}
 }

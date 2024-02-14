@@ -34,7 +34,7 @@ public class SessionFactoryProvider {
 
 
         StandardServiceRegistry standardRegistry =
-                new StandardServiceRegistryBuilder().configure("/hibernate_testDb.cfg.xml").loadProperties("/hibernate_testDb.cfg.xml").build();
+                new StandardServiceRegistryBuilder().configure().build();
         Metadata metaData =
                 new MetadataSources(standardRegistry).getMetadataBuilder().build();
         sessionFactory = metaData.getSessionFactoryBuilder().build();

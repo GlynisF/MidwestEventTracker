@@ -47,7 +47,7 @@ class NotebookDaoTest {
     @Test
     void getAllNotebooksSuccess() {
         List<Notebook> notebooks = notebookDao.getAll();
-        assertEquals(6, notebooks.size());
+        assertEquals(17, notebooks.size());
     }
 
     /**

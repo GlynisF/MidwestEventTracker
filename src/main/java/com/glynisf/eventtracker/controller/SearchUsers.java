@@ -1,7 +1,6 @@
 package com.glynisf.eventtracker.controller;
 
 import com.glynisf.eventtracker.entity.Event;
-import com.glynisf.eventtracker.entity.Notebook;
 import com.glynisf.eventtracker.entity.User;
 import com.glynisf.eventtracker.persistence.GenericDao;
 import org.apache.logging.log4j.LogManager;
@@ -14,10 +13,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.time.LocalDate;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
 
 @WebServlet(
         urlPatterns = {"/searchUser"}

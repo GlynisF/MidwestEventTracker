@@ -26,7 +26,7 @@ public class Notebook implements Serializable {
 
     @ManyToOne
     @JoinColumn(name = "user_user_id",
-    foreignKey = @ForeignKey(name = "user_id"))
+        foreignKey = @ForeignKey(name = "user_id"))
     private User user;
 
     @OneToMany(mappedBy = "notebook", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
@@ -150,7 +150,6 @@ public class Notebook implements Serializable {
         return "Notebook{" +
                 "id=" + id +
                 ", title='" + title + '\'' +
-                ", user=" + user +
                 '}';
     }
 }

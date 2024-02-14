@@ -17,6 +17,7 @@ public class Location implements Serializable {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
 	@GenericGenerator(name = "native", strategy = "native")
+	@JsonProperty("id")
 	private int id;
 
 	@JsonProperty("place_id")
@@ -27,7 +28,7 @@ public class Location implements Serializable {
 	@Column(name = "location_name")
 	private String locationName;
 
-
+	@JsonProperty("phone_number")
 	@Column(name = "phone_number")
 	private String phoneNumber;
 
@@ -193,7 +194,6 @@ public class Location implements Serializable {
 				", zip='" + zip + '\'' +
 				", wheelchairAccessibleEntrance=" + wheelchairAccessibleEntrance +
 				", website='" + website + '\'' +
-				", event=" + event +
 				'}';
 	}
 }

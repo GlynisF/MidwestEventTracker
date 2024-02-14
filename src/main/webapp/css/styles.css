@@ -68,7 +68,11 @@ div .index_bg {
     border-radius: 3px;
 }
 
-/* Media Query for devices withi coarse pointers and no hover functionality */
+.notebook-container li button:hover {
+    background-color: black;
+    text: white;
+}
+
 
 /* This will use a fallback image instead of a video for devices that commonly do not support the HTML5 video element */
 

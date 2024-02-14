@@ -1,6 +1,7 @@
 package com.glynisf.eventtracker.persistence;
 
 import com.glynisf.eventtracker.entity.Event;
+import com.glynisf.eventtracker.entity.EventDetails;
 import com.glynisf.eventtracker.entity.Notebook;
 import com.glynisf.test.util.Database;
 import org.apache.logging.log4j.LogManager;
@@ -9,6 +10,9 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.io.Serializable;
+import java.time.LocalDate;
+import java.time.LocalTime;
 import java.util.List;
 import java.util.Set;
 
@@ -24,15 +28,19 @@ public class EventDaoTest {
      */
     GenericDao eventDao;
 
+	private GenericDao<EventDetails, Serializable> detailsDao;
+
     private final Logger logger = LogManager.getLogger(this.getClass());
 
     /**
      * Sets up the connection to database and instantiates a new NotebookDao.
      */
+
     @BeforeEach
     void setUp() {
         notebookDao = new GenericDao(Notebook.class);
         eventDao = new GenericDao(Event.class);
+		detailsDao = new GenericDao(EventDetails.class);
         Database database = Database.getInstance();
         database.runSQL("cleandb.sql");
         logger.info(database);
@@ -42,8 +50,13 @@ public class EventDaoTest {
     void getAllEventsSuccess() {
         List<Event> events = eventDao.getAll();
         assertNotNull(events);
-        assertEquals(4, events.size());
+        assertEquals(10, events.size());
     }
+
+	@Test
+	void addArtistSuccess() {
+
+	}
 
     @Test
     void insertEventSuccess() {
@@ -66,6 +79,14 @@ public class EventDaoTest {
         eventDao.delete(eventDao.getById(3));
         assertNull(eventDao.getById(3));
     }
+
+	@Test
+	void eventDetailsSuccess() {
+		Event event = (Event) eventDao.getById(4);
+		EventDetails details = new EventDetails(LocalDate.parse("2024-02-24"), LocalTime.parse("21:00"), LocalTime.parse("02:00"), event);
+		int detailsId = detailsDao.insert(details);
+
+	}
 
     @Test
     void deleteEventFromNotebookSuccess() {
@@ -118,6 +139,7 @@ public class EventDaoTest {
     /**
      * Verify successful get by property (like match)
      */
+
     @Test
     void getByPropertyLikeSuccess() {
         Event event = (Event) eventDao.getById(2);

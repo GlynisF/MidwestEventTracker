@@ -16,7 +16,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="eventplanner.jsp">Event Planner</a>
+                        <a class="nav-link" href="eventPlanner">Event Planner</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="signup.jsp">Sign Up</a>
@@ -39,10 +39,6 @@
                         </div>
                     </li>
                 </ul>
-                <form class="d-flex">
-                    <input class="form-control me-sm-2" type="search" placeholder="Search">
-                    <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-                </form>
             </div>
         </div>
     </nav>

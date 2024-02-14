@@ -1,77 +1,196 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: GCADAGFISHER
-  Date: 12/25/2023
-  Time: 12:04 AM
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css">
+    <%@include file="includes/head.jsp" %>
+    <link rel="stylesheet" href="https://cdn.datatables.net/v/dt/jqc-1.12.4/dt-1.13.6/b-2.4.2/sl-1.7.0/datatables.min.css"/>
+    <link rel="stylesheet" href="Editor-2.2.2/css/editor.dataTables.css">
 
-    <script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-
-    <title>Autocomplete Form</title>
+    <script src="https://cdn.datatables.net/v/dt/jqc-1.12.4/dt-1.13.6/b-2.4.2/sl-1.7.0/datatables.min.js"></script>
+    <script src="Editor-2.2.2/js/dataTables.editor.js"></script>
+    <title>Title</title>
+    <c:set var="location" value="${sessionScope.locations}" scope="session"/>
 </head>
-<body>
+<body class="container">
+<%@include file="includes/nav.jsp" %>
 <div class="container">
-    <form class="row g-3" id="autocompleteForm" autocomplete="off">
-        <div class="col-md-6">
-            <label for="name" class="form-label">Location Name</label>
-            <input type="text" class="form-control" id="name" placeholder="Enter location name">
-        </div>
-        <div class="col-md-6">
-            <label for="phone_number" class="form-label">Phone Number</label>
-            <input type="text" class="form-control" id="phone_number" placeholder="Phone Number">
-        </div>
-        <div class="col-12">
-            <label for="address" class="form-label">Address</label>
-            <input type="text" class="form-control" id="address" placeholder="1234 Main St">
-        </div>
-        <div class="col-12">
-            <label for="apartment" class="form-label">Address 2</label>
-            <input type="text" class="form-control" id="apartment" placeholder="Apartment, studio, or floor">
-        </div>
-        <div class="col-md-6">
-            <label for="city" class="form-label">City</label>
-            <input type="text" class="form-control" id="city">
-        </div>
-        <div class="col-md-4">
-            <label for="state" class="form-label">State (2 characters)</label>
-            <input type="text" class="form-control" id="state" maxlength="2">
-        </div>
-        <div class="col-md-2">
-            <label for="zip" class="form-label">Zip</label>
-            <input type="text" class="form-control" id="zip">
-        </div>
-        <div class="col-12">
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="wheelchair_accessible">
-                <label class="form-check-label" for="wheelchair_accessible">
-                    Wheelchair Accessible
-                </label>
+    <div class="card">
+        <div class="card-body">
+            <div class="card-header">
+                <h5 class="text-center display-4">Location Info</h5>
             </div>
+            <div class="text-nowrap">
+                <table id="locationTable" class="display mw-auto justify-content-evenly">
+                    <thead>
+                    <tr>
+                        <th scope="col">Venue</th>
+                        <th scope="col">Address</th>
+                        <th scope="col">Apartment</th>
+                        <th scope="col">City</th>
+                        <th scope="col">State</th>
+                        <th scope="col">Zip</th>
+                        <th scope="col">Website</th>
+                        <th scope="col">Phone</th>
+                        <th scope="col">Disabled Access</th>
+                    </tr>
+                    </thead>
+                    <tbody id="locationBody">
+                    <!-- DataTable body will be dynamically populated here -->
+                    </tbody>
+                </table>
+            </div>
+            <a class="btn btn-secondary" id="locationButton">Update Locations</a>
         </div>
-        <div class="col-12">
-            <label for="website" class="form-label">Website</label>
-            <input type="text" class="form-control" id="website" placeholder="Website">
-        </div>
-        <!-- Add more form fields as needed -->
-        <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
+    </div>
+    <%@include file="includes/footer.jsp" %>
 </div>
+<script>
+    (function($){
+    $(document).ready(function () {
 
-</div>
+        const editor = new $.fn.dataTable.Editor({
+            fields: [
+                { label: 'Venue', name: 'name' },
+                { label: 'Address', name: 'address' },
+                { label: 'Apartment', name: 'apartment' },
+                { label: 'City', name: 'city' },
+                { label: 'State', name: 'state' },
+                { label: 'Zip', name: 'zip' },
+                { label: 'Website', name: 'website' },
+                { label: 'Phone', name: 'phoneNumber' },
+                {
+                    label: 'Disabled Access',
+                    name: 'wheelchairAccessibleEntrance',
+                    type: 'select',
+                    options: [
+                        {label:'true', value:'true',},
+                        {label:'false', value:'false'},
+                    ]
+                }
+            ],
+            formOptions: {
+                inline: {
+                    onBlur: 'submit',
+                    submit: 'allIfChanged',
+                }
+            },
+            idSrc: "id",
+            table: '#locationTable',
+        });
+
+        const table = $('#locationTable').DataTable({
+            dom: 'Bfrtip',
+            columns: [
+                { data: 'name'},
+                {
+                    data: 'address',
+                    render: function(data, type, row) {
+                        if (type === 'display' && row.apartment.length > 0) {
+                            return data + ', ' + row.apartment;
+                        }
+                        return data; // Otherwise, display only the address
+                    }
+                },
+                { data: 'apartment', visible: false},
+                { data: 'city', name: 'city' },
+                { data: 'state', name: 'state' },
+                { data: 'zip', name: 'zip' },
+                { data: 'website', name: 'website' },
+                { data: 'phoneNumber', name:'phoneNumber' },
+                { data: 'wheelchairAccessibleEntrance'},
+            ],
+            order: [1, 'asc'],
+            select: {
+                type: 'os'
+            },
+            lengthChange: false,
+            fixedHeader: true,
+            rowId: 'id',
+            buttons: [
+                { extend: 'edit', editor: editor },
+                { extend: 'remove', editor: editor },
+                { extend: 'create', editor: editor }
+            ],
+        });
+
+        // Populate location table
+        <c:forEach var="location" items="${sessionScope.locations}">
+        table.row.add({
+            'name': '${location.name}',
+            'address': '${location.address}',
+            'apartment': '${location.apartment}',
+            'city': '${location.city}',
+            'state': '${location.state}',
+            'zip': '${location.zip}',
+            'website': '${location.website}',
+            'phoneNumber': '${location.phoneNumber}',
+            'wheelchairAccessibleEntrance': '${location.wheelchairAccessibleEntrance}'
+        }).draw();
+        </c:forEach>;
+
+        // Edit cell event
+        $('#locationTable').on('click', 'tbody tr td', function () {
+            editor.inline(this);
+            let wca = table.column( 'wheelchairAccessibleEntrance:name' ).data();
+            console.log(wca);
+        });
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        const wcaA = table.column( 'wheelchairAccessibleEntrance:name' ).data();
+
+        editor.on( 'open', function ( e, type ) {
+            $('select[name="wheelchairAccessibleEntrance"]').filter('option[value="' + wcaA + '"]').prop('selected', true);
+        } );
+
+
+        // Update Locations button click event
+        $('#locationButton').on('click', async function (e) {
+            e.preventDefault();
+
+            // Iterate through each row with changes
+            table.rows({ search: 'applied' }).every(async function (rowIdx, tableLoop, rowLoop) {
+                const data = this.data();
+                let locationId = table.rows(this).$('#id').val();
+                // Check if the row is modified
+                if (this.any()) {
+                    // Prepare data for submission
+                    const rowData = {
+                        name: data.name || '',
+                        address: data.address || '',
+                        apartment: data.apartment || '',
+                        city: data.city || '',
+                        state: data.state || '',
+                        zip: data.zip || '',
+                        website: data.website || '',
+                        phoneNumber: data.phoneNumber || '',
+                        wheelchairAccessibleEntrance: data.wheelchairAccessibleEntrance
+                    };
+
+                    try {
+                        // Submit data to REST endpoint using Fetch API with await
+                        const response = await fetch('http://localhost:8080/MidwestEventTracker_war/services/locations/' + locationId, {
+                            method: 'PUT',
+                            headers: {
+                                'Content-Type': 'application/json',
+                                'Accept': 'application/json'
+                            },
+                            body: JSON.stringify(rowData)
+                        });
+
+                        if (!response.ok) {
+                            throw new Error('Network response was not ok: ' + response.statusText);
+                        }
+                        const responseData = await response.json();
+                        console.log('Data submitted successfully:', responseData);
+                    } catch (error) {
+                        console.error('Error submitting data:', error.message);
+                    }
+                }
+            });
+        });
+    });
+    }(jQuery));
+</script>
+
 </body>
 </html>

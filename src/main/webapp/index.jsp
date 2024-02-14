@@ -26,12 +26,6 @@
         </div>
 
     </header>
-    <html>
-    <body>
-    <!-- Other content -->
-    </body>
-    </html>
-
 
     <%@include file="includes/script.js" %>
 

@@ -1,18 +1,25 @@
 package com.glynisf.eventtracker.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.core.JsonGenerator;
+import com.fasterxml.jackson.core.JsonParser;
+import com.fasterxml.jackson.databind.DeserializationContext;
+import com.fasterxml.jackson.databind.JsonDeserializer;
+import com.fasterxml.jackson.databind.JsonSerializer;
+import com.fasterxml.jackson.databind.SerializerProvider;
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import java.io.IOException;
 import java.io.Serializable;
 import java.time.LocalDate;
-import java.time.temporal.ChronoUnit;
+import java.time.format.DateTimeFormatter;
 import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
-
-import static javax.persistence.FetchType.EAGER;
-import static javax.persistence.FetchType.LAZY;
 
 /**
  * Holds details to create a new User.
@@ -28,14 +35,22 @@ public class User implements Serializable {
 
     @Column(name = "first_name")
     private String firstName;
+
     @Column(name = "last_name")
     private String lastName;
+
     @Column(name = "user_name")
     private String userName;
+
+	@JsonSerialize(using = EventDetails.LocalDateSerializer.class)
+	@JsonDeserialize(using = EventDetails.LocalDateDeserializer.class)
+	@JsonProperty("date_of_birth")
     @Column(name = "date_of_birth")
     private LocalDate dateOfBirth;
+
     @Column(name = "email_address")
     private String email;
+
     private String gender;
 
     @Id
@@ -44,7 +59,7 @@ public class User implements Serializable {
     @Column(name = "user_id")
     private int id;
 
-    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = EAGER)
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     @JsonIgnore
     private Set<Notebook> notebooks = new HashSet<>();
 
@@ -90,7 +105,7 @@ public class User implements Serializable {
     /**
      * Sets notebook.
      *
-     * @param notebook the notebook
+     * @param notebooks the notebook
      */
     public void setNotebooks(Set<Notebook> notebooks) {
         this.notebooks = notebooks;
@@ -223,17 +238,11 @@ public class User implements Serializable {
         this.password = password;
     }
 
-    /**
-     * Gets age.
-     *
-     * @return the age
-     */
-    public int getAge() {
+	public void setDateOfBirth(LocalDate dateOfBirth) {
+		this.dateOfBirth = dateOfBirth;
+	}
 
-        return (int) ChronoUnit.YEARS.between(dateOfBirth, LocalDate.now());
-    }
-
-    /**
+	/**
      * Gets date of birth.
      *
      * @return the date of birth
@@ -262,6 +271,21 @@ public class User implements Serializable {
         notebook.setUser(null);
     }
 
+	public static class LocalDateSerializer extends JsonSerializer<LocalDate> {
+		@Override
+		public void serialize(LocalDate value, JsonGenerator gen, SerializerProvider serializers) throws IOException {
+			gen.writeString(value.format(DateTimeFormatter.ISO_LOCAL_DATE));
+		}
+	}
+
+	// Custom deserializer for LocalDate
+	public static class LocalDateDeserializer extends JsonDeserializer<LocalDate> {
+		@Override
+		public LocalDate deserialize(JsonParser p, DeserializationContext ctxt) throws IOException {
+			return LocalDate.parse(p.getValueAsString(), DateTimeFormatter.ISO_LOCAL_DATE);
+		}
+	}
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -286,6 +310,7 @@ public class User implements Serializable {
                 ", email='" + email + '\'' +
                 ", gender='" + gender + '\'' +
                 ", id=" + id +
+		        ", notebooks=" + notebooks +
                 '}';
     }
 

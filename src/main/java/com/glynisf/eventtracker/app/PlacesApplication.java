@@ -1,7 +1,6 @@
 package com.glynisf.eventtracker.app;
 
 
-
 import com.glynisf.eventtracker.util.PropertiesLoader;
 
 import javax.ws.rs.ApplicationPath;
@@ -24,6 +23,9 @@ public class PlacesApplication extends Application implements PropertiesLoader {
 		classesSet.add(AutocompleteResource.class);
 		classesSet.add(Locations.class);
 		classesSet.add(CustomCorsFilter.class);
+		classesSet.add(Notebooks.class);
+		classesSet.add(Events.class);
+		classesSet.add(Artists.class);
 
         return classesSet;
     }

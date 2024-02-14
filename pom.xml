@@ -1,12 +1,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.glynisf</groupId>
   <artifactId>MidwestEventTracker</artifactId>
   <packaging>war</packaging>
-    <version>1.0-SNAPSHOT</version>
+  <version>1.0-SNAPSHOT</version>
   <name>MidwestEventTracker Maven Webapp</name>
-  <url>http://maven.apache.org</url>
+  <url>https://maven.apache.org</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -21,27 +21,17 @@
     <maven.compiler.release>11</maven.compiler.release>
     <maven-compiler-plugin-version>3.8.1</maven-compiler-plugin-version>
     <maven-surefire-plugin-version>2.19</maven-surefire-plugin-version>
-    <mysql-version>8.0.33</mysql-version>
+    <mysql-version>8.2.0</mysql-version>
     <lombok-version>1.18.10</lombok-version>
     <jersey-version>2.29.1</jersey-version>
     <jackson-version>2.10.0</jackson-version>
     <database.properties>src/main/resources/database.properties</database.properties>
+    <cognito.properties>src/main/resources/cognito.properties</cognito.properties>
+    <hibernate.properties>src/main/resources/hibernate.cfg.xml</hibernate.properties>
+
   </properties>
 
   <dependencies>
-
-      <dependency>
-          <groupId>com.itfsw</groupId>
-          <artifactId>QueryBuilder</artifactId>
-          <version>1.0.4</version>
-      </dependency>
-
-      <!-- https://mvnrepository.com/artifact/com.google.maps/google-maps-services -->
-      <dependency>
-          <groupId>com.google.maps</groupId>
-          <artifactId>google-maps-services</artifactId>
-          <version>2.2.0</version>
-      </dependency>
 
       <!-- hibernate dependencies -->
     <dependency>
@@ -114,11 +104,7 @@
     </dependency>
 
   <!-- mysql -->
-    <dependency>
-      <groupId>mysql</groupId>
-      <artifactId>mysql-connector-java</artifactId>
-      <version>${mysql-version}</version>
-    </dependency>
+
 
     <dependency>
       <groupId>com.mysql</groupId>
@@ -126,7 +112,7 @@
       <version>${mysql-version}</version>
     </dependency>
 
-  <!-- lombok -->
+      <!-- lombok -->
     <dependency>
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
@@ -172,14 +158,14 @@
     <dependency>
       <groupId>org.json</groupId>
       <artifactId>json</artifactId>
-      <version>20230227</version>
+      <version>20231013</version>
     </dependency>
 
     <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
     <dependency>
       <groupId>commons-io</groupId>
       <artifactId>commons-io</artifactId>
-      <version>2.11.0</version>
+      <version>2.15.1</version>
     </dependency>
 
     <!-- jackson dependencies -->
@@ -215,8 +201,14 @@
         <version>2.0.0</version>
       </dependency>
 
+      <!-- https://mvnrepository.com/artifact/com.google.maps/google-maps-services -->
+      <dependency>
+          <groupId>com.google.maps</groupId>
+          <artifactId>google-maps-services</artifactId>
+          <version>2.2.0</version>
+      </dependency>
 
-    <dependency>
+      <dependency>
       <groupId>com.google.api-client</groupId>
       <artifactId>google-api-client-servlet</artifactId>
       <version>2.0.0</version>
@@ -233,29 +225,6 @@
           <scope>test</scope>
       </dependency>
 
-      <!-- jquery -->
-    <dependency>
-      <groupId>org.webjars</groupId>
-      <artifactId>jquery</artifactId>
-      <version>3.7.1</version>
-    </dependency>
-
-
-      <!-- JSON form -->
-      <dependency>
-          <groupId>com.networknt</groupId>
-          <artifactId>json-schema-validator</artifactId>
-          <version>1.0.87</version>
-          <!-- Only required for versions < 1.0.82. See README.md -->
-          <exclusions>
-              <exclusion>
-                  <groupId>org.apache.commons</groupId>
-                  <artifactId>commons-lang3</artifactId>
-              </exclusion>
-          </exclusions>
-      </dependency>
-
-
       <!-- https://mvnrepository.com/artifact/javax.jms/javax.jms-api -->
       <dependency>
           <groupId>javax.jms</groupId>
@@ -268,16 +237,34 @@
           <artifactId>cxf-rt-frontend-jaxrs</artifactId>
           <version>3.4.10</version>
       </dependency>
+
       <dependency>
           <groupId>org.apache.activemq</groupId>
           <artifactId>activemq-client</artifactId>
-          <version>5.16.6</version>
+          <version>5.18.3</version>
       </dependency>
+
+      <!-- https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-core -->
       <dependency>
-          <groupId>com.amazonaws.secretsmanager</groupId>
-          <artifactId>aws-secretsmanager-jdbc</artifactId>
-          <version>1.0.12</version>
+          <groupId>com.amazonaws</groupId>
+          <artifactId>aws-java-sdk-core</artifactId>
+          <version>1.12.629</version>
       </dependency>
+      <!-- https://mvnrepository.com/artifact/org.glassfish.hk2/hk2-api -->
+      <!-- https://mvnrepository.com/artifact/software.amazon.awssdk/cognitoidentityprovider -->
+      <dependency>
+          <groupId>software.amazon.awssdk</groupId>
+          <artifactId>cognitoidentityprovider</artifactId>
+          <version>2.16.40</version>
+      </dependency>
+
+      <!-- https://mvnrepository.com/artifact/com.squareup.okhttp3/okhttp -->
+      <dependency>
+          <groupId>com.squareup.okhttp3</groupId>
+          <artifactId>okhttp</artifactId>
+          <version>5.0.0-alpha.12</version>
+      </dependency>
+
 
   </dependencies>
   <!-- end dependencies-->
@@ -289,6 +276,10 @@
       <!-- plugin management start -->
       <plugins>
         <!-- plugins start -->
+          <plugin>
+              <artifactId>maven-resources-plugin</artifactId>
+              <version>3.0.2</version>
+          </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-compiler-plugin</artifactId>

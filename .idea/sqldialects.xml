@@ -4,6 +4,7 @@
     <file url="file://$PROJECT_DIR$/src/main/resources/dump.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/src/test/resources/cleandb.sql" dialect="MySQL" />
     <file url="file://$USER_HOME$/MySQL" dialect="GenericSQL" />
+    <file url="file://$USER_HOME$/aws-2024_01_07_03_02_44-dump.sql" dialect="MySQL" />
     <file url="file://$USER_HOME$/test_et_localhost-2023_12_14_00_46_46-dump.sql" dialect="MySQL" />
     <file url="file://$USER_HOME$/test_et_localhost-2023_12_14_00_51_50-dump.sql" dialect="MySQL" />
     <file url="file://$USER_HOME$/test_et_localhost-2023_12_14_01_28_06-dump.sql" dialect="MySQL" />
